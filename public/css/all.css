@@ -657,9 +657,9 @@ ul.navbar-list li {
 .press li {
   margin-top: 1.5em; }
 
-dl.service-item-wrapper dt:not(:first-of-type) {
+dl dt:not(:first-of-type) {
   margin-top: 2em; }
-dl.service-item-wrapper dd.description {
+dl dd.description {
   margin-top: .5em; }
 
 /* extras */
@@ -670,7 +670,8 @@ html,
 body {
   font-family: "Muli";
   color: #000000;
-  font-size: 13px; }
+  font-size: 16px;
+  line-height: 1.3em; }
 
 h1,
 h2,
@@ -695,11 +696,14 @@ h5 {
   line-height: 1.3em; }
 
 em {
+  color: #656464;
   font-style: italic; }
 
 strong {
   font-weight: 800;
-  font-size: 1.35em; }
+  font-size: 1.1em; }
+  strong a {
+    text-decoration: underline; }
 
 /* nav bar */
 .navbar .container.row {

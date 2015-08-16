@@ -5,6 +5,7 @@ body {
   font-family: $base-font;
   color: $type-base-color;
   font-size: $font-size;
+  line-height: $line-height;
 }
 
 h1,
@@ -30,16 +31,21 @@ h2 {
 
 h5 {
   font-size: $font-size-title-small;
-  line-height: 1.3em;
+  line-height: $line-height;
 }
 
 em {
+  color: $em-color;
   font-style: italic;
 } 
 
 strong { 
   font-weight: $font-bold;
-  font-size: 1.35em;
+  font-size: 1.1em;
+  
+  a {
+    text-decoration: underline;
+  }
 }
 
 

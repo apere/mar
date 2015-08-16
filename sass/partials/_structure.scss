@@ -122,13 +122,11 @@ ul.navbar-list li {
 }
 
 dl {
-  &.service-item-wrapper {
-    dt:not(:first-of-type) {
-      margin-top: 2em; 
-    }
-    dd.description {
-      margin-top: .5em; 
-    }
+  dt:not(:first-of-type) {
+    margin-top: 2em; 
+  }
+  dd.description {
+    margin-top: .5em; 
   }
 }
 
