@@ -1,0 +1,140 @@
+html,
+body {
+  width: $base-width;
+}
+
+img {
+  max-width: $base-width;
+  max-height: 95vh;
+}
+
+
+/* type */
+
+h1, h2 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+h5 {
+  margin-top: .25em;
+}
+
+.title {
+  margin-top: -2em;
+  padding-left: 0 !important;
+}
+
+
+/* nav bar */
+
+.navbar .container.row {
+  width: $base-width;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  padding-left: 1em;
+  background-color: $nav-bar-background-color;
+}
+
+ul.navbar-list {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+ul.navbar-list li {
+  display: inline-block;
+  padding: 0 10px;
+  margin-bottom: 0;
+}
+
+
+/* Footer */
+
+.footer {
+  padding: .65em;
+  padding-bottom: .25em;
+  padding-left: calc(1em + 10px);
+  background-color: $footer-background-color;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  table {
+    width: $base-width;
+    margin-bottom: 0;
+    tr {
+      border: none;
+      td,
+      th {
+        border: none;
+        padding: 0;
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+.social-media {
+  img {
+    transition: all 250ms ease-in-out;
+    tranform: scale(1);
+    margin-right: .75em;
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+}
+
+.marlogo {
+  min-height: $min-logo-height;
+}
+
+
+/* sections */
+
+.main-info {
+  background-color: $main-info-background-color;
+  padding-bottom: $content-margin;
+  margin-bottom: 2.5em;
+}
+
+.content {
+  padding: $content-padding;
+  p {
+    margin-top: $content-margin;
+  }
+}
+
+.qualifications {
+  padding-bottom: 4em;
+}
+
+.qualifications ul,
+.degrees,
+.awards,
+.press {
+  margin-top: $content-margin;
+  list-style: none;
+}
+
+.awards li,
+.press li {
+  margin-top: 1.5em;
+}
+
+dl {
+  &.service-item-wrapper {
+    dt:not(:first-of-type) {
+      margin-top: 2em; 
+    }
+    dd.description {
+      margin-top: .5em; 
+    }
+  }
+}
+
+
+/* extras */
+
+.top-margin {
+  margin-top: 2em;
+}

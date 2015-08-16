@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+html,
+body {
+  font-family: $base-font;
+  color: $type-base-color;
+  font-size: $font-size;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.title,
+.navbar {
+  font-family: $title-font;
+}
+
+h1 {
+  font-size: $font-size-title-large;
+  font-weight: $font-regular;
+  text-align: center;
+}
+
+h2 {
+  font-size: $font-size-title-medium;
+  font-weight: $font-regular
+}
+
+h5 {
+  font-size: $font-size-title-small;
+  line-height: 1.3em;
+}
+
+em {
+  font-style: italic;
+} 
+
+strong { 
+  font-weight: $font-bold;
+  font-size: 1.35em;
+}
+
+
+/* nav bar */
+
+.navbar .container.row {
+  line-height: 2.5em;
+}
+
+ul.navbar-list {
+  text-align: left;
+}
+
+ul.navbar-list li {
+  font-size: $font-size-base;
+}
+
+a:hover,
+ul.navbar-list li.active a {
+  color: $link-hover-color;
+}
+
+
+/* footer */
+
+.footer {
+  a {
+    line-height: $font-size-footer;
+    font-size: $font-size-footer;
+  }
+  table tr {
+    td,
+    th {
+      font-size: $font-size-footer-small;
+    }
+  }
+}
