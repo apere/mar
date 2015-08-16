@@ -1,17 +1,37 @@
+/* generic */
+
 html,
 body {
   width: $base-width;
 }
 
+.container {
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    padding: 0 20px 10px 20px;
+    padding-top: ($line-height + $font-size-base) * 2;
+    padding-bottom: 3em;
+  }
+}
+
 img {
   max-width: $base-width;
   max-height: 95vh;
+  @media (max-width: $mobile-width) {
+    max-width: 80vw;
+    max-height: 75vh;
+  }
 }
 
+p {
+  margin-bottom: 0;
+  &.bottom-margin {
+    margin-bottom: 2rem;
+  }
+}
 
-/* type */
-
-h1, h2 {
+h1,
+h2 {
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -25,31 +45,110 @@ h5 {
   padding-left: 0 !important;
 }
 
+ul {
+  margin-bottom: 0;
+  li:not(:first-of-type) {
+    margin-top: 2em;
+  } 
+}
+
+dl {
+  dt:not(:first-of-type) {
+    margin-top: 2em;
+  }
+  dd.description {
+    margin-top: .5em;
+  }
+}
 
 /* nav bar */
 
-.navbar .container.row {
-  width: $base-width;
-  margin-top: 3em;
-  margin-bottom: 2em;
-  padding-left: 1em;
-  background-color: $nav-bar-background-color;
+
+.navbar {
+  @media (max-width: $mobile-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    overflow: hidden;
+    height: $line-height + $font-size-base;
+    transition: all 250ms ease-in-out;
+    padding-left: 0;
+    padding-bottom: 0;
+    z-index: 20;
+    border-bottom: 1px solid transparent;
+    
+    &.menu-open {
+      height:  ($line-height + $font-size-base) * 5 + .2em;
+      border-bottom: 1px solid rgba($link-color, .05); 
+    }
+  }
+  .container {
+    width: 85%;
+    padding-top: 0;
+    &.row {
+      width: $base-width;
+      margin-top: 3em;
+      margin-bottom: 2em;
+      padding-left: 1em;
+      background-color: $nav-bar-background-color;
+      position: relative;
+      
+      @media (max-width: $mobile-width) {
+        margin-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+      }
+      
+      .mobile-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+        cursor: pointer;
+        transition: all 250ms ease-in-out;
+        opacity: .5;
+        padding-right: 30px;
+        padding-left: 30px;
+        height: 100%;
+
+        &:hover {
+          opacity: .8; 
+        }
+      }
+
+      @media (max-width: $mobile-width) {
+        .mobile-button {
+          display: block;
+        }
+      }
+    }
+  }
+
+  ul.navbar-list {
+    list-style: none;
+    a {
+      @media (max-width: $mobile-width) {
+        &:not(:last-of-type) li {
+          border-bottom: 1px solid rgba($link-color, .05); 
+        } 
+      }
+    }
+
+    li {
+      display: inline-block;
+      padding: 0 20px;
+      margin: 0;
+
+      @media (max-width: $mobile-width) {
+        display: block;
+        width: 100vw;
+      }
+    }
+  }
 }
-
-ul.navbar-list {
-  list-style: none;
-  text-align: left;
-  margin-bottom: 0;
-}
-
-ul.navbar-list li {
-  display: inline-block;
-  padding: 0 10px;
-  margin-bottom: 0;
-}
-
-
-/* Footer */
+/* footer */
 
 .footer {
   padding: .65em;
@@ -58,6 +157,15 @@ ul.navbar-list li {
   background-color: $footer-background-color;
   margin-top: 2em;
   margin-bottom: 3em;
+  @media (max-width: $mobile-width) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
   table {
     width: $base-width;
     margin-bottom: 0;
@@ -86,53 +194,72 @@ ul.navbar-list li {
 
 .marlogo {
   min-height: $min-logo-height;
+  
+  @media (max-width: $mobile-width) {
+    text-align: center;
+    margin-bottom: 2em;
+  }
 }
 
 
-/* sections */
-
-.main-info {
-  background-color: $main-info-background-color;
-  padding-bottom: $content-margin;
-  margin-bottom: 2.5em;
-}
+/* section specific */
 
 .content {
   padding: $content-padding;
   p {
     margin-top: $content-margin;
   }
+  
+  @media (max-width: $mobile-width) {
+    &.qualifications, &.education, &.experience {
+      padding-bottom: 3em; 
+    }
+  }
 }
 
-.qualifications {
-  padding-bottom: 4em;
+.main-info {
+  background-color: $main-info-background-color;
+  padding-bottom: $content-margin;
+  margin-bottom: 2.5em;
+  padding-bottom: 3em;
+  
+  @media (max-width: $mobile-width) {
+    text-align: center;
+    padding-bottom: 0;
+  }
 }
+
+
 
 .qualifications ul,
 .degrees,
 .awards,
-.press {
+.press,
+.experience {
   margin-top: $content-margin;
   list-style: none;
 }
 
-.awards li,
-.press li {
-  margin-top: 1.5em;
-}
-
-dl {
-  dt:not(:first-of-type) {
-    margin-top: 2em; 
-  }
-  dd.description {
-    margin-top: .5em; 
-  }
+.personal-statement {
+  padding-bottom: 3em; 
 }
 
 
-/* extras */
+/* helpers */
 
 .top-margin {
   margin-top: 2em;
+}
+
+.mobile {
+  display: none; 
+  @media (max-width: $mobile-width) {
+    display: initial; 
+  }
+}
+
+.desktop {
+   @media (max-width: $mobile-width) {
+    display: none;
+  }
 }

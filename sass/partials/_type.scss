@@ -24,6 +24,10 @@ h1 {
   text-align: center;
 }
 
+.main-info h1 {
+  text-align: left; 
+}
+
 h2 {
   font-size: $font-size-title-medium;
   font-weight: $font-regular
@@ -36,7 +40,6 @@ h5 {
 
 em {
   color: $em-color;
-  font-style: italic;
 } 
 
 strong { 
@@ -48,6 +51,19 @@ strong {
   }
 }
 
+a {
+  color: $link-color;
+}
+
+dl {
+  dd.description {
+    @media (max-width: $mobile-width) {
+      p {
+        text-align: left; 
+      }
+    }
+  }
+}
 
 /* nav bar */
 
@@ -57,14 +73,13 @@ strong {
 
 ul.navbar-list {
   text-align: left;
-}
-
-ul.navbar-list li {
-  font-size: $font-size-base;
+  li {
+    font-size: $font-size-base;
+  }
 }
 
 a:hover,
-ul.navbar-list li.active a {
+ul.navbar-list a li.active  {
   color: $link-hover-color;
 }
 

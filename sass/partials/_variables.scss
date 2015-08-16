@@ -10,7 +10,7 @@ $font-bold: 800;
 // font sizes
 $font-size: 16px;
 $font-size-base: 1em;
-$line-height: 1.3em;
+$line-height: 1.5em;
 
 $font-size-title-large: 2em;
 $font-size-title-medium: 1.5em;
@@ -22,9 +22,10 @@ $font-size-footer-small: .85em;
 // type colors
 $type-base-color: #000000;
 
+$link-color: $type-base-color;
 $link-hover-color: #33C3F0;
 
-$em-color: #656464;
+$em-color: #9b9b9b;
 
 // background colors
 $nav-bar-background-color: #e8f9ff;
@@ -33,6 +34,7 @@ $footer-background-color: $nav-bar-background-color;
 $main-info-background-color: #feffe8;
 
 // sizes
+$mobile-width: 550px;
 $base-width: 100%;
 
 $min-logo-height: 270px;

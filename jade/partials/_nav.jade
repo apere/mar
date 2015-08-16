@@ -1,13 +1,21 @@
 nav.navbar
     .container.row
       ul.navbar-list
-        li.navbar-item.active
-          a(href='index.html') Mareshia Donald, PhD
+        a(href='index.html')
+          li.navbar-item.active
+            | Mareshia Donald, PhD
+        a(href='about.html')
+          li.navbar-item
+            | About
+         a(href='edu.html')
+          li.navbar-item
+           | Education/Experience
+        a(href='awards.html')
+          li.navbar-item
+            | Awards, Honors, and Press
+        a(href='service.html')
+          li.navbar-item
+            | Service
         li.navbar-item
-          a(href='about.html') About
-        li.navbar-item
-          a(href='edu.html') Education/Experience
-        li.navbar-item
-          a(href='awards.html') Awards, Honors, and Press
-        li.navbar-item
-          a(href='service.html') Service
+          .mobile-button
+            img(src='public/images/hamburger.png')
