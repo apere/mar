@@ -3,14 +3,21 @@
 html,
 body {
   width: $base-width;
+  positioN: relative;
 }
 
 .container {
+  position: static;
+  @media(max-width: $mobile-nav-width) {
+    padding-top: ($line-height + $font-size-base) * 2;
+    padding-bottom: 30px;
+  }
+  
   @media (max-width: $mobile-width) {
     width: 100%;
-    padding: 0 20px 10px 20px;
-    padding-top: ($line-height + $font-size-base) * 2;
+    padding: 0 20px 10px 30px;
     padding-bottom: 3em;
+    padding-top: 5em;
   }
 }
 
@@ -46,6 +53,7 @@ h5 {
 }
 
 ul {
+  list-style: none;
   margin-bottom: 0;
   li:not(:first-of-type) {
     margin-top: 2em;
@@ -61,11 +69,22 @@ dl {
   }
 }
 
+.column, .columns {
+  &:first-of-type {
+    margin-left: 0 !important; 
+  }
+  
+  &.image-col {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+}
+
 /* nav bar */
 
 
 .navbar {
-  @media (max-width: $mobile-width) {
+  @media (max-width: $mobile-nav-width) {
     position: absolute;
     top: 0;
     left: 0;
@@ -79,7 +98,7 @@ dl {
     border-bottom: 1px solid transparent;
     
     &.menu-open {
-      height:  ($line-height + $font-size-base) * 5 + .2em;
+      height:  ($line-height + $font-size-base) * 5;
       border-bottom: 1px solid rgba($link-color, .05); 
     }
   }
@@ -94,12 +113,28 @@ dl {
       background-color: $nav-bar-background-color;
       position: relative;
       
-      @media (max-width: $mobile-width) {
+      @media (max-width: $mobile-nav-width) {
         margin-top: 0;
         padding-bottom: 0;
         padding-left: 0;
         padding-right: 0;
+        
+        #nav-links, #logo {
+          display: block;
+          a li {
+            text-align: left;
+            display: block;
+          }
+        }
+        
+        #nav-links {
+          a:first-child li {
+            border-top: 1px solid rgba($link-color, .05);
+          }
+        } 
       }
+      
+      
       
       .mobile-button {
         position: absolute;
@@ -118,9 +153,9 @@ dl {
         }
       }
 
-      @media (max-width: $mobile-width) {
-        .mobile-button {
-          display: block;
+      @media (max-width: $mobile-nav-width) {
+        .mobile-button, .mobile{
+          display: block !important;
         }
       }
     }
@@ -129,7 +164,7 @@ dl {
   ul.navbar-list {
     list-style: none;
     a {
-      @media (max-width: $mobile-width) {
+      @media (max-width: $mobile-nav-width) {
         &:not(:last-of-type) li {
           border-bottom: 1px solid rgba($link-color, .05); 
         } 
@@ -141,13 +176,39 @@ dl {
       padding: 0 20px;
       margin: 0;
 
-      @media (max-width: $mobile-width) {
+      @media (max-width: $mobile-nav-width) {
         display: block;
         width: 100vw;
       }
     }
   }
 }
+
+nav {
+  vertical-align: top; 
+}
+
+#logo {
+  display: inline-block;
+  width: 260px;
+  vertical-align: top;
+  a li{
+    font-size: 1.35em;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+#nav-links {
+  display: inline-block;
+  width: calc(100% - 265px - 1em);
+  text-align: right;
+  
+  a li {
+    padding: 0 10px;
+  } 
+}
+
 /* footer */
 
 .footer {
@@ -157,7 +218,7 @@ dl {
   background-color: $footer-background-color;
   margin-top: 2em;
   margin-bottom: 3em;
-  @media (max-width: $mobile-width) {
+  @media (max-width: $mobile-nav-width) {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -211,7 +272,7 @@ dl {
   }
   
   @media (max-width: $mobile-width) {
-    &.qualifications, &.education, &.experience {
+    &.qualifications,  &.experience {
       padding-bottom: 3em; 
     }
   }
@@ -224,7 +285,9 @@ dl {
   padding-bottom: 3em;
   
   @media (max-width: $mobile-width) {
-    text-align: center;
+    h2 {
+      text-align: center;
+    } 
     padding-bottom: 0;
   }
 }
@@ -232,12 +295,12 @@ dl {
 
 
 .qualifications ul,
+.inline-image,
 .degrees,
 .awards,
 .press,
 .experience {
   margin-top: $content-margin;
-  list-style: none;
 }
 
 .personal-statement {
@@ -248,18 +311,27 @@ dl {
 /* helpers */
 
 .top-margin {
-  margin-top: 2em;
+  margin-top: 2em !important; 
+}
+
+.no-top-padding {
+  padding-top: 0 !important; 
+}
+
+.no-top-margin {
+  margin-top: 0 !important; 
 }
 
 .mobile {
-  display: none; 
+  display: none !important; 
   @media (max-width: $mobile-width) {
-    display: initial; 
+    display: initial !important; 
   }
 }
 
 .desktop {
+  display: initial !important;
    @media (max-width: $mobile-width) {
-    display: none;
+    display: none !important;
   }
 }
