@@ -2,7 +2,7 @@
 
 html,
 body {
-  width: $base-width;
+  width: 100vw;
   positioN: relative;
 }
 
@@ -103,7 +103,7 @@ dl {
     }
   }
   .container {
-    width: 85%;
+    width: 90%;
     padding-top: 0;
     &.row {
       width: $base-width;

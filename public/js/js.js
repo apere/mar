@@ -3,7 +3,7 @@ $(document).ready(function ($) {
   var i = url.lastIndexOf('.html');
   var j = url.lastIndexOf('/') + 1;
   url = url.substring(j, i);
-  console.log(url);
+
 switch(url) {
     case 'about':
         $('#about-nav li').toggleClass('active', true);

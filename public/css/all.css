@@ -114,9 +114,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding: 0; } }
 /* For devices larger than 550px */
 @media (min-width: 550px) {
-  .container {
-    width: 80%; }
-
   .column,
   .columns {
     margin-left: 4%; }
@@ -568,7 +565,7 @@ there.
 /* generic */
 html,
 body {
-  width: 100%;
+  width: 100vw;
   positioN: relative; }
 
 .container {
@@ -644,7 +641,7 @@ dl dd.description {
       height: 12.5em;
       border-bottom: 1px solid rgba(0, 0, 0, 0.05); } }
 .navbar .container {
-  width: 85%;
+  width: 90%;
   padding-top: 0; }
   .navbar .container.row {
     width: 100%;
