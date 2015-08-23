@@ -6,6 +6,7 @@ body {
   color: $type-base-color;
   font-size: $font-size;
   line-height: $line-height;
+  font-weight: $font-light;
 }
 
 h1,
@@ -20,8 +21,15 @@ h5,
 
 h1 {
   font-size: $font-size-title-large;
-  font-weight: $font-regular;
+  font-weight: $font-light;
   text-align: center;
+  padding-bottom: 4px;
+  
+  @media (max-width: $mobile-nav-width) {
+    padding-bottom: .75em;
+    border-bottom: 0px solid rgba($em-color, .2);
+    text-align: center;
+  }
 }
 
 .main-info h1 {
@@ -30,7 +38,11 @@ h1 {
 
 h2 {
   font-size: $font-size-title-medium;
-  font-weight: $font-regular
+  font-weight: $font-light;
+  @media(max-width: $mobile-nav-width) {
+    margin-bottom: 1em; 
+  }
+  
 }
 
 h5 {
@@ -40,10 +52,11 @@ h5 {
 
 em {
   color: $em-color;
+  font-weight: $font-light;
 } 
 
 strong { 
-  font-weight: $font-bold;
+  font-weight: $font-regular;
   font-size: 1.1em;
   
   a {
@@ -56,7 +69,9 @@ a {
 }
 
 dl {
+  line-height: 1.3em;
   dd.description {
+    line-height: $line-height;
     @media (max-width: $mobile-width) {
       p {
         text-align: left; 
@@ -69,12 +84,14 @@ dl {
 
 .navbar .container.row {
   line-height: 2.5em;
+  
 }
 
 ul.navbar-list {
   text-align: left;
   li {
     font-size: $font-size-base;
+    font-weight: $font-light;
   }
 }
 

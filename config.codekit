@@ -2,20 +2,20 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "19051",
 "files": {
-	"\/about.html": {
+	"\/about\/index.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/about.html",
+		"inputAbbreviatedPath": "\/about\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/awards.html": {
+	"\/awards-honors-press\/index.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/awards.html",
+		"inputAbbreviatedPath": "\/awards-honors-press\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -29,44 +29,53 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/edu.html": {
+	"\/education-and-experience\/index.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/edu.html",
+		"inputAbbreviatedPath": "\/education-and-experience\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/jade\/about.jade": {
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/jade\/about\/index.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/jade\/about.jade",
-		"outputAbbreviatedPath": "\/about.html",
+		"inputAbbreviatedPath": "\/jade\/about\/index.jade",
+		"outputAbbreviatedPath": "\/about\/index.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/jade\/awards.jade": {
+	"\/jade\/awards-honors-press\/index.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/jade\/awards.jade",
-		"outputAbbreviatedPath": "\/awards.html",
+		"inputAbbreviatedPath": "\/jade\/awards-honors-press\/index.jade",
+		"outputAbbreviatedPath": "\/awards-honors-press\/index.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/jade\/edu.jade": {
+	"\/jade\/education-and-experience\/index.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/jade\/edu.jade",
-		"outputAbbreviatedPath": "\/edu.html",
+		"inputAbbreviatedPath": "\/jade\/education-and-experience\/index.jade",
+		"outputAbbreviatedPath": "\/education-and-experience\/index.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -88,7 +97,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/partials\/_footer.jade",
-		"outputAbbreviatedPath": "\/jade\/partials\/_footer.html",
+		"outputAbbreviatedPath": "\/partials\/_footer.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -99,18 +108,18 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/partials\/_nav.jade",
-		"outputAbbreviatedPath": "\/jade\/partials\/_nav.html",
+		"outputAbbreviatedPath": "\/partials\/_nav.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/jade\/service.jade": {
+	"\/jade\/service\/index.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/jade\/service.jade",
-		"outputAbbreviatedPath": "\/service.html",
+		"inputAbbreviatedPath": "\/jade\/service\/index.jade",
+		"outputAbbreviatedPath": "\/service\/index.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -121,7 +130,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/templates\/_layout.jade",
-		"outputAbbreviatedPath": "\/jade\/templates\/_layout.html",
+		"outputAbbreviatedPath": "\/templates\/_layout.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -135,123 +144,112 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/public\/images\/156342758DED24F0.jpg": {
+	"\/public\/images\/bg source\/texture.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 104986,
-		"inputAbbreviatedPath": "\/public\/images\/156342758DED24F0.jpg",
-		"outputAbbreviatedPath": "\/public\/images\/156342758DED24F0.jpg",
+		"inputAbbreviatedPath": "\/public\/images\/bg source\/texture.jpg",
+		"outputAbbreviatedPath": "\/public\/images\/bg source\/texture.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/images\/156342758DED24F3.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 104986,
-		"inputAbbreviatedPath": "\/public\/images\/156342758DED24F3.jpg",
-		"outputAbbreviatedPath": "\/public\/images\/156342758DED24F3.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/images\/2ED6267246E0D749.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 104986,
-		"inputAbbreviatedPath": "\/public\/images\/2ED6267246E0D749.jpg",
-		"outputAbbreviatedPath": "\/public\/images\/2ED6267246E0D749.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/images\/2ED6267246E0D74A.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 104986,
-		"inputAbbreviatedPath": "\/public\/images\/2ED6267246E0D74A.jpg",
-		"outputAbbreviatedPath": "\/public\/images\/2ED6267246E0D74A.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/images\/arrow.png": {
+	"\/public\/images\/bg\/microscope_beige.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1178,
-		"inputAbbreviatedPath": "\/public\/images\/arrow.png",
-		"outputAbbreviatedPath": "\/public\/images\/arrow.png",
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/public\/images\/bg\/microscope_beige.png",
+		"outputAbbreviatedPath": "\/public\/images\/bg\/microscope_beige.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/images\/background.png": {
+	"\/public\/images\/bg\/microscope_brown.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 106036,
-		"inputAbbreviatedPath": "\/public\/images\/background.png",
-		"outputAbbreviatedPath": "\/public\/images\/background.png",
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/public\/images\/bg\/microscope_brown.png",
+		"outputAbbreviatedPath": "\/public\/images\/bg\/microscope_brown.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/images\/bars.png": {
+	"\/public\/images\/bg\/microscope_hex-med.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 53260,
-		"inputAbbreviatedPath": "\/public\/images\/bars.png",
-		"outputAbbreviatedPath": "\/public\/images\/bars.png",
+		"initialSize": 39588,
+		"inputAbbreviatedPath": "\/public\/images\/bg\/microscope_hex-med.png",
+		"outputAbbreviatedPath": "\/public\/images\/bg\/microscope_hex-med.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/images\/bars2-mobile.png": {
+	"\/public\/images\/bg\/microscope_hex-small.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 471674,
-		"inputAbbreviatedPath": "\/public\/images\/bars2-mobile.png",
-		"outputAbbreviatedPath": "\/public\/images\/bars2-mobile.png",
+		"initialSize": 19033,
+		"inputAbbreviatedPath": "\/public\/images\/bg\/microscope_hex-small.png",
+		"outputAbbreviatedPath": "\/public\/images\/bg\/microscope_hex-small.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/images\/bars2.png": {
+	"\/public\/images\/bg\/microscope_hex-xs.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 671478,
-		"inputAbbreviatedPath": "\/public\/images\/bars2.png",
-		"outputAbbreviatedPath": "\/public\/images\/bars2.png",
+		"initialSize": 29662,
+		"inputAbbreviatedPath": "\/public\/images\/bg\/microscope_hex-xs.png",
+		"outputAbbreviatedPath": "\/public\/images\/bg\/microscope_hex-xs.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/images\/beak.png": {
+	"\/public\/images\/bg\/microscope_hex.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 786308,
-		"inputAbbreviatedPath": "\/public\/images\/beak.png",
-		"outputAbbreviatedPath": "\/public\/images\/beak.png",
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/public\/images\/bg\/microscope_hex.png",
+		"outputAbbreviatedPath": "\/public\/images\/bg\/microscope_hex.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/images\/crab.png": {
+	"\/public\/images\/bg\/microscope_light.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 762738,
-		"inputAbbreviatedPath": "\/public\/images\/crab.png",
-		"outputAbbreviatedPath": "\/public\/images\/crab.png",
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/public\/images\/bg\/microscope_light.png",
+		"outputAbbreviatedPath": "\/public\/images\/bg\/microscope_light.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/bg\/microscope_light2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/public\/images\/bg\/microscope_light2.png",
+		"outputAbbreviatedPath": "\/public\/images\/bg\/microscope_light2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/bg\/microscope_yellow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/public\/images\/bg\/microscope_yellow.png",
+		"outputAbbreviatedPath": "\/public\/images\/bg\/microscope_yellow.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -267,17 +265,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/images\/disect.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 726450,
-		"inputAbbreviatedPath": "\/public\/images\/disect.png",
-		"outputAbbreviatedPath": "\/public\/images\/disect.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/public\/images\/disect2.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -285,50 +272,6 @@
 		"initialSize": 335685,
 		"inputAbbreviatedPath": "\/public\/images\/disect2.png",
 		"outputAbbreviatedPath": "\/public\/images\/disect2.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/images\/dot.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 266,
-		"inputAbbreviatedPath": "\/public\/images\/dot.png",
-		"outputAbbreviatedPath": "\/public\/images\/dot.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/images\/email.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 17851,
-		"inputAbbreviatedPath": "\/public\/images\/email.png",
-		"outputAbbreviatedPath": "\/public\/images\/email.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/images\/facebook500.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 11802,
-		"inputAbbreviatedPath": "\/public\/images\/facebook500.png",
-		"outputAbbreviatedPath": "\/public\/images\/facebook500.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/images\/hamburger.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2849,
-		"inputAbbreviatedPath": "\/public\/images\/hamburger.png",
-		"outputAbbreviatedPath": "\/public\/images\/hamburger.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -344,200 +287,68 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/images\/linkedin.png": {
+	"\/public\/images\/icons\/email.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17851,
+		"inputAbbreviatedPath": "\/public\/images\/icons\/email.png",
+		"outputAbbreviatedPath": "\/public\/images\/icons\/email.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/icons\/facebook500.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11802,
+		"inputAbbreviatedPath": "\/public\/images\/icons\/facebook500.png",
+		"outputAbbreviatedPath": "\/public\/images\/icons\/facebook500.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/icons\/hamburger.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2852,
+		"inputAbbreviatedPath": "\/public\/images\/icons\/hamburger.png",
+		"outputAbbreviatedPath": "\/public\/images\/icons\/hamburger.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/icons\/linkedin.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 15303,
-		"inputAbbreviatedPath": "\/public\/images\/linkedin.png",
-		"outputAbbreviatedPath": "\/public\/images\/linkedin.png",
+		"inputAbbreviatedPath": "\/public\/images\/icons\/linkedin.png",
+		"outputAbbreviatedPath": "\/public\/images\/icons\/linkedin.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/images\/magnet.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 508121,
-		"inputAbbreviatedPath": "\/public\/images\/magnet.png",
-		"outputAbbreviatedPath": "\/public\/images\/magnet.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/images\/main_photo.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 289315,
-		"inputAbbreviatedPath": "\/public\/images\/main_photo.png",
-		"outputAbbreviatedPath": "\/public\/images\/main_photo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/images\/messenger-generic.png": {
+	"\/public\/images\/icons\/messenger-generic.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 17557,
-		"inputAbbreviatedPath": "\/public\/images\/messenger-generic.png",
-		"outputAbbreviatedPath": "\/public\/images\/messenger-generic.png",
+		"inputAbbreviatedPath": "\/public\/images\/icons\/messenger-generic.png",
+		"outputAbbreviatedPath": "\/public\/images\/icons\/messenger-generic.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/images\/microscope-mobile.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 318411,
-		"inputAbbreviatedPath": "\/public\/images\/microscope-mobile.png",
-		"outputAbbreviatedPath": "\/public\/images\/microscope-mobile.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/images\/microscope.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 479560,
-		"inputAbbreviatedPath": "\/public\/images\/microscope.png",
-		"outputAbbreviatedPath": "\/public\/images\/microscope.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/images\/pinterest.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 27309,
-		"inputAbbreviatedPath": "\/public\/images\/pinterest.png",
-		"outputAbbreviatedPath": "\/public\/images\/pinterest.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/images\/skype.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 25970,
-		"inputAbbreviatedPath": "\/public\/images\/skype.png",
-		"outputAbbreviatedPath": "\/public\/images\/skype.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/images\/twitter.png": {
+	"\/public\/images\/icons\/twitter.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 20051,
-		"inputAbbreviatedPath": "\/public\/images\/twitter.png",
-		"outputAbbreviatedPath": "\/public\/images\/twitter.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/images\/vimeo.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 20691,
-		"inputAbbreviatedPath": "\/public\/images\/vimeo.png",
-		"outputAbbreviatedPath": "\/public\/images\/vimeo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/images\/white-bars2.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 870126,
-		"inputAbbreviatedPath": "\/public\/images\/white-bars2.png",
-		"outputAbbreviatedPath": "\/public\/images\/white-bars2.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/images\/white-bars3.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 953445,
-		"inputAbbreviatedPath": "\/public\/images\/white-bars3.png",
-		"outputAbbreviatedPath": "\/public\/images\/white-bars3.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/images\/white-beak.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 372445,
-		"inputAbbreviatedPath": "\/public\/images\/white-beak.png",
-		"outputAbbreviatedPath": "\/public\/images\/white-beak.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/images\/white-beak2.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 194452,
-		"inputAbbreviatedPath": "\/public\/images\/white-beak2.png",
-		"outputAbbreviatedPath": "\/public\/images\/white-beak2.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/images\/white-beak4.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 648644,
-		"inputAbbreviatedPath": "\/public\/images\/white-beak4.png",
-		"outputAbbreviatedPath": "\/public\/images\/white-beak4.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/images\/white-microscope.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 701443,
-		"inputAbbreviatedPath": "\/public\/images\/white-microscope.png",
-		"outputAbbreviatedPath": "\/public\/images\/white-microscope.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/images\/white-microscope2.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 701443,
-		"inputAbbreviatedPath": "\/public\/images\/white-microscope2.png",
-		"outputAbbreviatedPath": "\/public\/images\/white-microscope2.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/images\/wordpress.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 38118,
-		"inputAbbreviatedPath": "\/public\/images\/wordpress.png",
-		"outputAbbreviatedPath": "\/public\/images\/wordpress.png",
+		"inputAbbreviatedPath": "\/public\/images\/icons\/twitter.png",
+		"outputAbbreviatedPath": "\/public\/images\/icons\/twitter.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -547,18 +358,18 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/public\/js\/js.js",
-		"outputAbbreviatedPath": "\/public\/js\/min\/js-min.js",
+		"outputAbbreviatedPath": "\/public\/js\/min\/js.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/public\/js\/min\/js-min.js": {
+	"\/public\/js\/min\/js.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/public\/js\/min\/js-min.js",
-		"outputAbbreviatedPath": "\/public\/js\/min\/min\/js-min-min.js",
+		"inputAbbreviatedPath": "\/public\/js\/min\/js.js",
+		"outputAbbreviatedPath": "\/public\/js\/min\/min\/js.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -569,18 +380,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/public\/js\/vendor\/jquery.min.js",
-		"outputAbbreviatedPath": "\/public\/js\/vendor\/min\/jquery.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/public\/js\/vendor\/min\/jquery.min-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/public\/js\/vendor\/min\/jquery.min-min.js",
-		"outputAbbreviatedPath": "\/public\/js\/vendor\/min\/min\/jquery.min-min-min.js",
+		"outputAbbreviatedPath": "\/public\/js\/vendor\/min\/jquery.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -703,11 +503,11 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/service.html": {
+	"\/service\/index.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/service.html",
+		"inputAbbreviatedPath": "\/service\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -886,13 +686,13 @@
 	"jadeAutoOutputPathEnabled": 1,
 	"jadeAutoOutputPathFilenamePattern": "*.html",
 	"jadeAutoOutputPathRelativePath": "",
-	"jadeAutoOutputPathReplace1": "",
+	"jadeAutoOutputPathReplace1": "jade",
 	"jadeAutoOutputPathReplace2": "",
-	"jadeAutoOutputPathStyle": 1,
+	"jadeAutoOutputPathStyle": 3,
 	"jadeCompileDebug": 1,
 	"jadeOutputStyle": 0,
 	"javascriptAutoOutputPathEnabled": 1,
-	"javascriptAutoOutputPathFilenamePattern": "*-min.js",
+	"javascriptAutoOutputPathFilenamePattern": "*.js",
 	"javascriptAutoOutputPathRelativePath": "\/min",
 	"javascriptAutoOutputPathReplace1": "",
 	"javascriptAutoOutputPathReplace2": "",

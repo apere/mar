@@ -1,23 +1,21 @@
-nav.navbar
-  block active-element
-  .container.row
-    ul.navbar-list#logo
-      a#index-nav(href='index.html')
-        li.navbar-item
-          | Mareshia Donald, PhD
-    ul.navbar-list#nav-links
-      a#about-nav(href='about.html')
-        li.navbar-item
-          | About
-       a#edu-nav(href='edu.html')
-        li.navbar-item
-         | Education/Experience
-      a#awards-nav(href='awards.html')
-        li.navbar-item
-          | Awards, Honors, and Press
-      a#service-nav(href='service.html')
-        li.navbar-item
-          | Service
-      li.navbar-item.mobile
-        .mobile-button
-          img(src='public/images/hamburger.png')
+nav.navbar.container.row
+  ul.navbar-list#logo
+    a#index-nav(href='/')
+      li.navbar-item
+        | Mareshia Donald, PhD
+  ul.navbar-list#nav-links
+    a#about-nav(href='/about/')
+      li.navbar-item
+        | About
+     a#edu-nav(href='/education-and-experience/')
+      li.navbar-item
+       | Education & Experience
+    a#awards-nav(href='/awards-honors-press/')
+      li.navbar-item
+        | Awards, Honors, & Press
+    a#service-nav(href='/service/')
+      li.navbar-item
+        | Service
+    li.navbar-item.mobile
+      .mobile-button
+        img(src='/public/images/icons/hamburger.png')

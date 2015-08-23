@@ -4,11 +4,13 @@ html
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     title Mareshia Donald, PhD
-    link(rel='stylesheet', type='text/css', href='public/css/all.css')
-    script(type='text/javascript', src='public/js/vendor/jquery.min.js')
-    script(type='text/javascript', src='public/js/js.js')
-  body
+    link(rel='stylesheet', type='text/css', href='/public/css/all.css')
+    script(type='text/javascript', src='/public/js/vendor/jquery.min.js')
+    script(type='text/javascript', src='/public/js/min/js.js')
+  block body-id
+  body(id= bodyID)
+    include ../partials/_nav.jade
+    block title
     .container
-      include ../partials/_nav.jade
       block content
-      include ../partials/_footer.jade
+    include ../partials/_footer.jade

@@ -12,8 +12,8 @@ $font-size: 16px;
 $font-size-base: 1em;
 $line-height: 1.5em;
 
-$font-size-title-large: 2em;
-$font-size-title-medium: 1.5em;
+$font-size-title-large: 2.1em;
+$font-size-title-medium: 1.8em;
 $font-size-title-small: 1.2em;
 
 $font-size-footer: 20px;
@@ -22,16 +22,27 @@ $font-size-footer-small: .85em;
 // type colors
 $type-base-color: #000000;
 
+$red: #ff7f7e;
+$blue: #7ae2df;
+
+
 $link-color: $type-base-color;
-$link-hover-color: #33C3F0;
+$link-hover-color: $blue;
+
+
 
 $em-color: #9b9b9b;
 
 // background colors
-$nav-bar-background-color: #e8f9ff;
+$main-info-background-color: rgba(255, 255, 255, 0.935);
+
+$nav-bar-background-color: rgba(255, 255, 255,1);
 $footer-background-color: $nav-bar-background-color;
 
-$main-info-background-color: #feffe8;
+
+$border-color: rgba(#d3d2d2, .2);
+
+
 
 // sizes
 $mobile-width: 550px;
@@ -42,5 +53,7 @@ $min-logo-height: 270px;
 
 $content-padding: 1.5em;
 $content-margin: 1em;
+
+$nav-border-width: 1px;
 
 
