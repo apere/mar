@@ -1,15 +1,10 @@
 extends ../templates/_layout.jade
 block body-id
   - bodyID = 'awards';
-block title 
-  .container.title-wrapper
-    .row
-      .twelve.columns.title
-        h1 Awards, Honors, & Press
 block content
   #grid.main-content
-    .row
-      .twelve.columns.main-info.content
+    .row.content
+      .twelve.columns.main-info
         h2 Awards & Honors
         dl.awards
           dt
@@ -26,20 +21,19 @@ block content
               | Marine Biological Laboratory Summer Program in Neuroscience Ethics and Survival Fellowship
           dd.date
             em June 2008 - July 2008 
-      .row
-        .eight.columns.main-info.content
-          h2 Press
-          dl.press
-            dt
-              strong
-                a(href='http://scienceclubforgirls.org/news-events-2/blog/mareshia-donalds-letter-to-her-young-self') Mareshia Donald’s letter to her young self
-            dd.link
-              a(href='http://scienceclubforgirls.org')
-                em scienceclubforgirls.org
-            dt
-              strong
-                a(href='http://www.brandeis.edu/now/2011/october/womeninscience.html') Growing cohort of women in science calling Brandeis home
-            dd.link
-              a(href='http://www.brandeis.edu')
-                em brandeis.edu
-        .four.columns.marlogo.desktop
+    .row.content
+      .eight.columns.main-info
+        h2 Press
+        dl.press
+          dt
+            strong
+              a(href='http://scienceclubforgirls.org/news-events-2/blog/mareshia-donalds-letter-to-her-young-self') Mareshia Donald’s letter to her young self
+          dd.link
+            a(href='http://scienceclubforgirls.org')
+              em scienceclubforgirls.org
+          dt
+            strong
+              a(href='http://www.brandeis.edu/now/2011/october/womeninscience.html') Growing cohort of women in science calling Brandeis home
+          dd.link
+            a(href='http://www.brandeis.edu')
+              em brandeis.edu

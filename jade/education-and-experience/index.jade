@@ -1,11 +1,6 @@
 extends ../templates/_layout.jade
 block body-id
   - bodyID = 'edu';
-block title 
-  .container.title-wrapper
-    .row
-      .twelve.columns.title
-        h1 Education & Experience
 block content
   #grid.main-content
     .row
@@ -25,9 +20,9 @@ block content
           dd.address
             em University of California at Santa Cruz, Santa Cruz CA 2004
       .row.content
-        .four.columns.image-col
+        .four.columns.content.image-col
           img.disect-photo(src='/public/images/disect2.png')
-        .eight.columns.main-info.experiences
+        .eight.columns.content.main-info.experiences.match-image-height
           h2 Experience
           dl.experience
             dt

@@ -571,34 +571,61 @@ body {
 body {
   display: inline-block;
   position: relative; }
-  body > .container:nth-of-type(2) {
+  body > .container:nth-of-type(1) {
     background-color: rgba(255, 255, 255, 0.935);
     padding: 1em;
+    padding-top: .5em;
     min-height: 100%; }
     @media (max-width: 750px) {
-      body > .container:nth-of-type(2):not(nav) {
+      body > .container:nth-of-type(1):not(nav) {
         width: calc(100% - 2em);
         margin-right: 1em;
         margin-left: 1em; } }
     @media (max-width: 550px) {
-      body > .container:nth-of-type(2):not(nav) {
+      body > .container:nth-of-type(1):not(nav) {
         padding: 1em;
         padding-top: 1em; } }
-  body#edu, body#service, body#awards, body#about, body#index {
+  body#edu, body#service, body#awards, body#about, body#index, body#howto {
     background-image: url('/public/images/bg/microscope_hex.png?1440367121');
-    background-position-y: bottom;
+    background-position-y: -150px;
     background-size: cover; }
     @media only screen and (max-width: 960px) and (min-width: 600px) {
-      body#edu, body#service, body#awards, body#about, body#index {
+      body#edu, body#service, body#awards, body#about, body#index, body#howto {
         background-image: url('/public/images/bg/microscope_hex-med.png?1440367711'); } }
     @media only screen and (max-width: 750px) {
-      body#edu, body#service, body#awards, body#about, body#index {
-        background-image: url('/public/images/bg/microscope_hex-small.png?1440367950'); } }
+      body#edu, body#service, body#awards, body#about, body#index, body#howto {
+        background-image: url('/public/images/bg/microscope_hex-small.png?1440396640'); } }
     @media only screen and (max-width: 550px) {
-      body#edu, body#service, body#awards, body#about, body#index {
-        background-image: url('/public/images/bg/microscope_hex-xs.png?1440367350'); } }
-  body#index, body#awards {
-    background-position-y: -150px; }
+      body#edu, body#service, body#awards, body#about, body#index, body#howto {
+        background-image: url('/public/images/bg/microscope_hex-xs.png?1440396280'); } }
+  body#howto h2 {
+    color: #2ccac5; }
+  body#howto img {
+    max-height: calc(90vh - 4em);
+    max-width: 90%;
+    margin: 2em auto !important;
+    display: block; }
+  body#howto dd ol {
+    margin-top: 2em; }
+
+code {
+  font-family: monospace;
+  font-weight: 100;
+  margin-bottom: .25em;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 0; }
+  code strong {
+    font-weight: 800; }
+
+pre {
+  margin: 1em 0 2em 0;
+  border: 1px solid rgba(128, 128, 128, 0.2); }
+  pre code {
+    margin: 0;
+    border-radius: 2px;
+    overflow-x: auto;
+    background-color: rgba(17, 76, 75, 0.05); }
 
 .container {
   position: static;
@@ -671,18 +698,27 @@ ul {
   list-style: none;
   margin-bottom: 0; }
   ul li:not(:first-of-type) {
-    margin-top: 2em; }
+    margin-top: 1em; }
 
 dl dt:not(:first-of-type) {
-  margin-top: 2em; }
+  margin-top: 1.5em; }
 dl dd.description {
   margin-top: .5em; }
+
+.row:first-of-type .image-col {
+  margin-top: 6px; }
 
 .column:first-of-type, .columns:first-of-type {
   margin-left: 0 !important; }
 .column.image-col, .columns.image-col {
   text-align: center;
-  margin-bottom: 2em; }
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: .5em; }
+  @media (max-width: 750px) {
+    .column.image-col, .columns.image-col {
+      margin-bottom: 1em;
+      padding-bottom: .75em; } }
 
 /* nav bar */
 .navbar {
@@ -828,26 +864,37 @@ footer {
     transform: scale(1.15); }
 
 .marlogo {
-  min-height: 270px; }
+  min-height: 270px;
+  padding-bottom: 0 !important; }
   @media (max-width: 550px) {
     .marlogo {
       text-align: center;
       margin-bottom: 2em; }
       .marlogo img {
-        width: calc(100% - .75em); } }
+        max-width: calc(100% - .75em); } }
 
 /* section specific */
 .content {
-  padding: 1.5em 0.75em; }
+  padding: 0.75em 0.75em; }
   .content p {
     margin-top: 1em; }
+    .content p:last-of-type {
+      margin-bottom: 0.5em; }
   @media (max-width: 550px) {
-    .content.qualifications, .content.experience {
+    .content.qualifications, .content.experiences {
       padding-bottom: 3em; } }
+  .content.qualifications {
+    padding-top: 0; }
+    @media (max-width: 750px) {
+      .content.qualifications {
+        padding-top: .75em; } }
+
+.experiences {
+  margin-left: 1em; }
 
 .main-info {
   background-color: rgba(255, 255, 255, 0.935);
-  margin-bottom: 3em; }
+  margin-bottom: 1em; }
   @media (max-width: 550px) {
     .main-info h2 {
       text-align: center; } }
@@ -858,16 +905,11 @@ dl {
 .qualifications ul,
 .inline-image,
 .degrees,
+.service,
 .awards,
 .press,
 .experience {
   margin-top: 1em; }
-
-.personal-statement {
-  padding-bottom: 3em; }
-  @media (max-width: 550px) {
-    .personal-statement {
-      padding-bottom: 0; } }
 
 /* helpers */
 .top-margin {
@@ -891,12 +933,18 @@ dl {
     .desktop {
       display: none !important; } }
 
-.match-image-height {
-  padding-top: 0; }
+.match-image-height h2 {
+  line-height: .8em; }
 
-@media (max-width: 550px) {
+@media (min-width: 730px) {
   #index .main-info {
-    margin-bottom: 0; } }
+    position: relative;
+    margin-bottom: 0; }
+    #index .main-info .wrapper {
+      position: relative;
+      top: 50%;
+      height: 100%;
+      transform: translateY(50%); } }
 
 html,
 body {
@@ -936,9 +984,22 @@ h2 {
     h2 {
       margin-bottom: 1em; } }
 
+h3 {
+  font-size: 1.4em;
+  font-weight: 300;
+  margin-bottom: .5em;
+  margin-top: 1em; }
+
 h5 {
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 1.5em; }
+
+hr {
+  margin: 0;
+  margin-bottom: 1em;
+  border-color: #50d9d5;
+  max-width: 33.3333%;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
 
 em {
   color: #9b9b9b;
@@ -982,3 +1043,7 @@ ul.navbar-list a li.active {
 .footer table tr td,
 .footer table tr th {
   font-size: 0.85em; }
+
+ul, ol {
+  list-style-position: outside;
+  -webkit-column-width: 100%; }

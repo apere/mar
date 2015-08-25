@@ -45,9 +45,24 @@ h2 {
   
 }
 
+h3 {
+  font-size: $font-size-title-small;
+  font-weight: $font-light;
+  margin-bottom: .5em;
+  margin-top: 1em;
+}
+
 h5 {
   font-size: $font-size-title-small;
   line-height: $line-height;
+}
+
+hr {
+  margin: 0;
+  margin-bottom: 1em;
+  border-color: darken($blue, 10%);
+  max-width: 33.3333%;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 em {
@@ -114,4 +129,9 @@ ul.navbar-list a li.active  {
       font-size: $font-size-footer-small;
     }
   }
+}
+
+ul, ol {
+  list-style-position: outside;
+  -webkit-column-width: 100%;
 }

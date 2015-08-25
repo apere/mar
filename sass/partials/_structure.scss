@@ -10,9 +10,10 @@ body {
   display: inline-block;
   position: relative; 
   
-  > .container:nth-of-type(2) {
+  > .container:nth-of-type(1) {
     background-color: $main-info-background-color;
     padding: 1em;
+    padding-top: .5em;
     min-height: 100%; 
     
     @media(max-width: $mobile-nav-width) {
@@ -31,9 +32,9 @@ body {
       }
   }
   
-  &#edu, &#service, &#awards, &#about, &#index {
+  &#edu, &#service, &#awards, &#about, &#index, &#howto {
     background-image: image-url('bg/microscope_hex.png');
-    background-position-y: bottom;
+    background-position-y: -150px;
     background-size: cover;
     
     @media only screen and (max-width: 960px) and (min-width: 600px){
@@ -48,8 +49,44 @@ body {
       background-image: image-url('bg/microscope_hex-xs.png');
     }
   }
-  &#index, &#awards {
-    background-position-y: -150px;
+  
+  &#howto {
+    h2 {
+      color: darken($blue, 20%);
+    }
+    img {
+      max-height: calc(90vh - 4em);
+      max-width: 90%;
+      margin: 2em auto !important;
+      display: block;
+    }
+    dd ol {
+      margin-top: 2em; 
+    }
+  }
+
+}
+
+code {
+  font-family: monospace;
+  font-weight: 100;
+  margin-bottom: .25em;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 0 ;
+  strong {
+    font-weight: 800; 
+  }
+}
+
+pre {
+  margin: 1em 0 2em 0;
+  border: 1px solid rgba(gray, .2);
+  code {
+    margin: 0;
+    border-radius: 2px;
+    overflow-x: auto;
+    background-color: rgba(darken($blue,50%), .05);
   }
 }
 
@@ -144,16 +181,24 @@ ul {
   list-style: none;
   margin-bottom: 0;
   li:not(:first-of-type) {
-    margin-top: 2em;
+    margin-top: 1em;
   } 
 }
 
 dl {
   dt:not(:first-of-type) {
-    margin-top: 2em;
+    margin-top: 1.5em;
   }
   dd.description {
     margin-top: .5em;
+  }
+}
+
+.row {
+  &:first-of-type {
+    .image-col {
+      margin-top: 6px; 
+    }
   }
 }
 
@@ -164,7 +209,14 @@ dl {
   
   &.image-col {
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: .5em;
+    
+    @media (max-width: $mobile-nav-width) {
+      margin-bottom: 1em;
+      padding-bottom: .75em;
+     }
   }
 }
 
@@ -378,12 +430,13 @@ footer {
 
 .marlogo {
   min-height: $min-logo-height;
+  padding-bottom: 0 !important;
   
   @media (max-width: $mobile-width) {
     text-align: center;
     margin-bottom: 2em;
     img {
-      width: calc(100% - .75em);
+      max-width: calc(100% - .75em);
     }
   }
 }
@@ -392,22 +445,38 @@ footer {
 /* section specific */
 
 .content {
-  padding: $content-padding $content-padding/2;
+  padding: $content-padding/2 $content-padding/2;
   p {
     margin-top: $content-margin;
+    
+    &:last-of-type {
+      margin-bottom: $content-margin/2; 
+    }
   }
   
   @media (max-width: $mobile-width) {
-    &.qualifications,  &.experience {
+    &.qualifications,  &.experiences {
       padding-bottom: 3em; 
     }
   }
+  
+  &.qualifications {
+    padding-top: 0;
+    
+    @media (max-width: $mobile-nav-width) {
+      padding-top: .75em;
+     }
+  } 
+}
+
+.experiences {
+  margin-left: 1em; 
 }
 
 .main-info {
   background-color: $main-info-background-color;
   //padding-bottom: $content-margin;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
   
   @media (max-width: $mobile-width) {
     h2 {
@@ -424,18 +493,11 @@ dl {
 .qualifications ul,
 .inline-image,
 .degrees,
+.service,
 .awards,
 .press,
 .experience {
   margin-top: $content-margin;
-}
-
-.personal-statement {
-  padding-bottom: 3em; 
-  
-  @media (max-width: $mobile-width) {
-    padding-bottom: 0; 
-  }
 }
 
 
@@ -468,14 +530,25 @@ dl {
 }
 
 .match-image-height {
-  padding-top: 0;
-  p {
-   
+  h2 {
+    line-height: .8em; 
   }
+
 }
 
-#index .main-info {
-  @media (max-width: $mobile-width) {
-    margin-bottom: 0; 
+#index {
+  
+  .main-info {   
+    @media (min-width: 730px) {
+      position: relative;
+      .wrapper {
+        position: relative;
+        top: 50%;
+        height: 100%;
+        transform: translateY(50%);
+      }
+      margin-bottom: 0; 
+    }
   }
+
 }

@@ -38,6 +38,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/how-to\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/how-to\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -76,6 +85,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/education-and-experience\/index.jade",
 		"outputAbbreviatedPath": "\/education-and-experience\/index.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/jade\/how-to\/index.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jade\/how-to\/index.jade",
+		"outputAbbreviatedPath": "\/how-to\/index.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -283,6 +303,72 @@
 		"initialSize": 426457,
 		"inputAbbreviatedPath": "\/public\/images\/headshot-new.jpg",
 		"outputAbbreviatedPath": "\/public\/images\/headshot-new.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/how-to\/1filezilla.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 342487,
+		"inputAbbreviatedPath": "\/public\/images\/how-to\/1filezilla.png",
+		"outputAbbreviatedPath": "\/public\/images\/how-to\/1filezilla.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/how-to\/2filezilla.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 51550,
+		"inputAbbreviatedPath": "\/public\/images\/how-to\/2filezilla.png",
+		"outputAbbreviatedPath": "\/public\/images\/how-to\/2filezilla.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/how-to\/3filezilla.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 215686,
+		"inputAbbreviatedPath": "\/public\/images\/how-to\/3filezilla.png",
+		"outputAbbreviatedPath": "\/public\/images\/how-to\/3filezilla.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/how-to\/4index.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 857112,
+		"inputAbbreviatedPath": "\/public\/images\/how-to\/4index.png",
+		"outputAbbreviatedPath": "\/public\/images\/how-to\/4index.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/how-to\/5about.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 678903,
+		"inputAbbreviatedPath": "\/public\/images\/how-to\/5about.png",
+		"outputAbbreviatedPath": "\/public\/images\/how-to\/5about.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/how-to\/6awards.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 361301,
+		"inputAbbreviatedPath": "\/public\/images\/how-to\/6awards.png",
+		"outputAbbreviatedPath": "\/public\/images\/how-to\/6awards.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
