@@ -1,0 +1,13 @@
+extends ../templates/_layout.jade
+block body-id
+  - bodyID = 'edu';
+block content
+  #grid.main-content
+    .row
+      .twelve.columns.main-info.education.content
+        include partials/_edu.jade
+      .row.content
+        .four.columns.content.image-col
+          img.disect-photo(src='/public/images/disect2.png')
+        .eight.columns.content.main-info.experiences.match-image-height
+          include partials/_experience.jade

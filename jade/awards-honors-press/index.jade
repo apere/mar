@@ -1,0 +1,11 @@
+extends ../templates/_layout.jade
+block body-id
+  - bodyID = 'awards';
+block content
+  #grid.main-content
+    .row.content
+      .twelve.columns.main-info
+        include partials/_awards-honors.jade
+    .row.content
+      .eight.columns.main-info
+        include partials/_press.jade
