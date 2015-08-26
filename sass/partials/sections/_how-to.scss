@@ -37,6 +37,11 @@
     li {
       margin-bottom: 3em;
     }
+    
+    ul, ol {
+      font-size: 100%;
+      margin-left: 0; 
+    }
   }
 }
 
@@ -56,4 +61,8 @@
       }
     }
   }
+}
+
+blockquote h1 {
+  text-align: left; 
 }

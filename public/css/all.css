@@ -608,7 +608,7 @@ body {
     padding-bottom: 0; }
   @media (max-width: 750px) {
     .container {
-      padding-top: 5em;
+      padding-top: 4.8em;
       padding-bottom: 30px; } }
   @media (max-width: 550px) {
     .container {
@@ -758,7 +758,7 @@ body {
   font-family: "Muli";
   color: #000000;
   font-size: 16px;
-  line-height: 1.5em;
+  line-height: 1.4em;
   font-weight: 300; }
 
 h1,
@@ -799,14 +799,7 @@ h3 {
 
 h5 {
   font-size: 1.4em;
-  line-height: 1.5em; }
-
-hr {
-  margin: 0;
-  margin-bottom: 1em;
-  border-color: #50d9d5;
-  max-width: 33.3333%;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
+  line-height: 1.4em; }
 
 em {
   color: #9b9b9b;
@@ -823,13 +816,19 @@ a {
 
 dl {
   line-height: 1.3em; }
-  dl dd.description {
-    line-height: 1.5em; }
-    @media (max-width: 550px) {
-      dl dd.description p {
-        text-align: left; } }
   dl dd {
     font-weight: 300; }
+    dl dd.description {
+      line-height: 1.4em; }
+      @media (max-width: 550px) {
+        dl dd.description p {
+          text-align: left; } }
+    dl dd.address, dl dd.date, dl dd.link {
+      font-size: 0.85em;
+      line-height: 1.25em; }
+  dl dt.service-item em {
+    font-size: 0.85em;
+    line-height: 1.25em; }
 
 .centered {
   margin-bottom: 2em;
@@ -912,14 +911,14 @@ ul {
       left: 0;
       width: 100vw;
       overflow: hidden;
-      height: 2.5em;
+      height: 2.4em;
       transition: all 250ms ease-in-out;
       padding-left: 0;
       padding-bottom: 0;
       z-index: 20;
       border-bottom: 1px solid transparent; }
       .navbar.menu-open {
-        height: 12.5em;
+        height: 12em;
         border-bottom: 1px solid rgba(0, 0, 0, 0.05); } }
   .navbar.container {
     padding-top: 0;
@@ -1085,6 +1084,11 @@ footer {
     #howto ol li,
     #howto ul li {
       margin-bottom: 3em; }
+    #howto ol ul, #howto ol ol,
+    #howto ul ul,
+    #howto ul ol {
+      font-size: 100%;
+      margin-left: 0; }
 
 #table-of-contents ul {
   margin-top: 1em; }
@@ -1097,3 +1101,6 @@ footer {
       list-style: disc; }
       #table-of-contents ul li ul li {
         margin-bottom: .5em !important; }
+
+blockquote h1 {
+  text-align: left; }

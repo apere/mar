@@ -57,14 +57,6 @@ h5 {
   line-height: $line-height;
 }
 
-hr {
-  margin: 0;
-  margin-bottom: 1em;
-  border-color: darken($blue, 10%);
-  max-width: 33.3333%;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-}
-
 em {
   color: $em-color;
   font-weight: $font-light;
@@ -85,17 +77,30 @@ a {
 
 dl {
   line-height: 1.3em;
-  dd.description {
-    line-height: $line-height;
-    @media (max-width: $mobile-width) {
-      p {
-        text-align: left; 
+  dd {
+    font-weight: $font-light;
+    &.description {
+      line-height: $line-height;
+
+      @media (max-width: $mobile-width) {
+        p {
+          text-align: left; 
+        }
+      }
+    }
+    &.address, &.date, &.link {
+      font-size: $font-size-footer-small; 
+      line-height: 1.25em;
+    }
+  }
+  dt {
+    &.service-item {
+      em {
+        font-size: $font-size-footer-small; 
+        line-height: 1.25em;
       }
     }
   }
-  dd {
-    font-weight: $font-light;
-  } 
 }
 
 .centered {
@@ -106,6 +111,8 @@ dl {
 table.middle {
   vertical-align: middle;
 }
+
+
 
 /* nav bar */
 
@@ -126,6 +133,7 @@ a:hover,
 ul.navbar-list a li.active  {
   color: $link-hover-color;
 }
+
 
 
 /* footer */
