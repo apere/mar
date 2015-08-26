@@ -1,0 +1,14 @@
+#index {
+  .main-info {
+    @media (min-width: 730px) {
+      position: relative;
+      .wrapper {
+        position: relative;
+        top: 50%;
+        height: 100%;
+        transform: translateY(50%);
+      }
+      margin-bottom: 0;
+    }
+  }
+}
