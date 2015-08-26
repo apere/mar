@@ -1,0 +1,152 @@
+h2 Code Reference
+hr
+p This section will briefly describe every HTML element that was highlighted above.
+h3#structure 
+  strong Structure of an HTML element
+p An HTML element is a chunk of text that describes how the chunk of text inside of it will be displayed on a webpage. The basic structure of every HTML element is the same:
+pre
+  code &lt;div class = &quot;description&quot;&gt;   &hellip;    &lt;/div&gt;
+ol
+  li 
+    span The element itself is denoted with greater than and less than symbols
+    pre
+      code <strong>&lt;</strong>div class = &quot;description&quot;<strong>&gt;</strong>   &hellip;    <strong>&lt;/</strong>div<strong>&gt;</strong>
+    p The first pair denotes the opening of element and the second pair (which contains a backslash) denotes the ending of the element. Everything between the two pairs is the actual content that will be displayed on the page.
+  li
+    span The opening and closing of the element always contains the type of element
+    pre
+      code &lt;<strong>div</strong> class = &quot;description&quot;&gt;   &hellip;    &lt;/<strong>div</strong>&gt;
+    p 
+      | In this case, the type of element being used is a 
+      code div
+  li
+    span 
+      | Sometimes, an element will have a class. These classes are used to style elements correctly. The classes is denoted by
+      code class = "&hellip;" 
+      | and is always located in the opening of the element.
+    pre
+      code &lt;div <strong>class = &quot;description&quot</strong>;&gt;   &hellip;    &lt;/div&gt;
+    p 
+      | In this case, our 
+      code div
+      |  has a class of 
+      code description
+  li
+    span 
+      | Some elements have special attributes, one of those is a link which contains an 
+      code href
+      |. This is what defines the url for the link.
+    pre
+      code &lt;a <strong>href= &quot; https://www.google.com &quot; </strong>&gt; link to google <strong>&lt;/a&gt;</strong>
+    p 
+      | In this case, we have a link that points to google.com with the text 
+      a(href='http://www.google.com') 
+        em link to google
+      |.
+    
+  li
+    span 
+      | Finally, the actual contents of the element (or the text that will be displayed on your webpage) is always located between the opening and closing of an element.
+    pre
+      code &lt;div class = &quot;description&quot;&gt;   <strong>This is my description text.</strong>   &lt;/div&gt;
+    p 
+      | In this case, our 
+      code div
+      |  will display the text
+      em  This is my description text.
+h3#custom-classes 
+  strong Classes you may use
+ol
+  li
+    code inner-wrapper
+    span  &#8212; On the homepage, this class is used to define the area where the main title and subtitle are held.
+  li
+    code date
+    span  &#8212; This class is used when the element contains a date (surprise). This is used on the Awards & Honors page.
+  li
+    code link
+    span  &#8212; This class is used when a definition description contains a link. This is used on the Awards & Honors page.
+   li
+    code address
+    span  &#8212; This class is used when a definition description contains an address or location. this is used on the Education & Experience page and the Service page.
+   li
+    code pdTitle
+    span  &#8212; This class is used when a definition term contains a title on the Education & Experience page and the Service page.
+   li
+    code description
+    span  &#8212; This class is used when a definition description contains a description paragraph (or more) on the Education & Experience page and the Service page.
+   li
+    code service-item
+    span  &#8212; This class is used when a definition term contains the title of a service item on the Service page.
+h3#custom-elements 
+  strong HTML elements you may use
+ol
+  li
+    code div
+    span  &#8212; This element simply defines a block of content that should exist on its own row.
+  li
+    code a
+    span  &#8212; This is a link element. Place the url for where you want the link to point to in the 
+    code href
+    |  attribute.
+  li
+    code h1
+    span  &#8212; This is the largest header element. It is only used on the homepage
+  li
+    code h2
+    span  &#8212; This is the second largest header element. It is used to denote the beginning of a section.
+  li
+    code h5
+    span  &#8212; This is the smallest header element. It is only used on the homepage to denote the subtitle.
+  li
+    code p
+    span  &#8212; This is a paragraph element. It is used to define a paragraph of text.
+  li
+    code strong
+    span  
+      |&#8212; This is used to denote text that should be bolded.
+  li
+    code em
+    span  
+      |&#8212; This is an emphasize element. This is used to make any text light gray.
+  li
+    code ul
+    span  
+      |&#8212; This is an unordered list. This list should contain a series of 
+      code li
+      | elements whose order does not matter. (e.g. a bulleted list).
+   li
+    code ol
+    span  
+      |&#8212; This is an ordered list. This list should contain a series of 
+      code li
+      | elements whose order does matter. This adds a number to the left of each element (e.g. this list).
+  li
+    code li
+    span  
+      | &#8212; This is a list item. This should always be inside of an
+      code ol
+      | or 
+      code ul
+      | .
+  li
+    code dl
+    span  
+      | &#8212; This is a definition list. This is a special kind of list that denotes a series of terms and their corresponding "defenitions". A definition list should contain a series of 
+      code dt
+      |  and 
+      code dd
+      | elements.
+  li
+    code dt
+    span  
+      | &#8212; This is a definition term. This is used to denote the 'term' for the next set of 
+      code dd
+      |  elements.
+    li
+      code dd
+      span  
+        | &#8212; This is a definition description. This contains any elements that are used to describe the preceeding 
+        code dt
+        | . You can have as many definition descriptions per term as you would like.
+  

@@ -2,8 +2,8 @@ extends ../templates/_layout.jade
 block body-id
   - bodyID = 'howto';
 block content
-  #grid.main-content
-    .row.content
+  article#grid.main-content
+    section#header.row.content
       .twelve.columns.content
         h1 How to Update MareshiaDonald.com
     .row.content
@@ -11,193 +11,24 @@ block content
         p.no-top-margin On this page, I'll describe the the workflow of updating the website mareshiadonald.com. I will attempt to be as detailed as possible by listing the software that you'll need; how to download the current site's content; the files that you may want to edit; templates for editing particular sections; and how to upload to the site.
     .row.content
       .twelve.columns.content
-        h2 Software
-        hr
-        dl
-          dt
-            strong 
-              a(href="https://filezilla-project.org/download.php?type=client") FileZilla
-          dd
-            em This is the software that you will be using to connect to the server located at mareshiadonald.com. Filezilla is an FTP (File Transfer Protocol) application. It allows you to view and update files on an FTP server in the same way you would view and update files on your own computer.
-           dt
-            strong 
-              a(href="http://brackets.io/") Brackets
-          dd
-            | This is my personal favorite text editor for coding. This application will let you open up any of your website files and edit them. It works just like a regular text editor but does some smart color coding for editing code. If you don't like brackets, you may want to try 
-            strong
-              a(href="http://www.sublimetext.com/") Sublime Text
-            |.
-        h3 
-          strong Setting up Filezilla 
-        ol
-          li 
-            | After you've downloaded filezilla for the first time, open the application and you should see this screen
-            img.center(src="/public/images/how-to/1filezilla.png")
-          li
-            | Click the Site Maganger link
-            img(src="/public/images/how-to/2filezilla.png")
-          li 
-            | Click 
-            strong New Site
-            |  and enter your information like below. You should already know your password and username. Click 
-            strong Connect 
-            | and that will save your settings and connect to the server.
-            dl
-              dt 
-                strong Host
-              dd ftp.mareshiadonald.com
-            img(src="/public/images/how-to/3filezilla.png")
-          li If you get a message prompting you to trust the servers certificate, click 
-            strong ok
-            |  .
-          li 
-            | Select every file and save it in a folder on your computer (if you want, you can download a copy of the website from the last time adam edited 
-            strong
-              a(href="https://github.com/apere/mar/archive/master.zip") here
-            | . This folder is the entire contents of your website. This is where you'll be working from.
+        include partials/_main-nav.jade
     .row.content
-      .twelve.columns.content
+      section#software.twelve.columns.content
+        include partials/_software.jade
+    .row.content
+      section#setup-filezilla.twelve.columns.content
+        include partials/_filezilla-setup.jade
+    .row.content
+      section#files.twelve.columns.content
         h2 Files
         hr
-        dl
-          dt
-            h3
-              strong /public/images/
-          dd
-            | All images belong in this folder. If you want to swap out an image, I suggest naming it the same as the image you're replacing and swap the files.
-          dt
-            h3
-              strong index.html
-          dd
-            | Every webpage will have a filename of "index.html". This one, the one in the main folder, is the file for 
-            strong MareshiaDonald.com/
-          dd
-            img(src="/public/images/how-to/4index.png")
-          dd 
-            p To find the areas that you'll want to edit, look for <strong>inner-wrapper</strong>. Inside of <strong>inner-wrapper</strong>, the two places that you'll want to edit are: 
-            ol
-              li
-                dl
-                  dt
-                    | title : 
-                    code <strong>&lt;h1&gt;</strong> [ insert title ] <strong>&lt;/h1&gt;</strong>
-                  dd
-                    | e.g. 
-                    em Mareshia Donald, PhD
-              li
-                dt
-                  | phrase : 
-                  code <strong>&lt;h2&gt;</strong> [ insert phrase ] <strong>&lt;/h2&gt;</strong>
-                dd
-                  | e.g. 
-                  em Scientist, STEM Educator and Outreach Professional with a commitment to social justice and diversifying the STEM pipeline.
-          dd
-            pre
-              code
-                | &lt;div class=&quot;<strong>inner-wrapper</strong>&quot;&gt;
-                |   <strong>&lt;h1&gt;</strong>Mareshia Donald, PhD<strong>&lt;/h1&gt;</strong>
-                |   <strong>&lt;h5&gt;</strong>Scientist, STEM Educator and Outreach Professional with a commitment to social justice and diversifying the STEM pipeline.<strong>&lt;/h5&gt;</strong>
-                | &lt;/div&gt;
-          dt 
-            h3
-              strong /about/index.html
-          dd
-            p This is the file for 
-              strong MareshiaDonald.com/about/
-          dd
-            img(src="/public/images/how-to/5about.png")
-          dd 
-            p To find the areas that you'll want to edit, look for the title of the section you want to edit
-            ol
-              li
-                dl
-                  dt
-                    | Personal Statement : 
-                    code <strong>&lt;p&gt;</strong> [ insert personal statement ] <strong>&lt;/p&gt;</strong>
-                  dd
-                    | e.g. 
-                    em Basic science exists as a language and a culture&hellip;
-              
-                  dd
-                    pre
-                      code
-                        | &lt;h2&gt;Personal Statement&lt;/h2&gt;
-                        |   <strong>&lt;p&gt;</strong>Basic science exists as a language and a culture all its own. I am a translator and a cultural ambassador. I am a quick learner who possesses strong analytic skills, a collaborative spirit, and a passion for developing new skills and meeting new people. I am fortunate to work in an environment in which I'm exposed to the broad applications of STEM. I am familiar with research and literature in an array of disciplines within the life sciences. I am passionate about communicating science and increasing entry points to educational access especially to under-resourced populations. I look forward to leveraging my scientific training to promote scientific literacy and shape the future of scientific innovation.</strong>&lt;/p&gt;</strong>
-              li
-                dl
-                  dt
-                    | Overview of Qualifications: 
-                    code <strong>&lt;li&gt; &lt;strong&gt;</strong> [ insert bold word ] <strong>&lt;/strong&gt;</strong> [ insert rest of statement ] <strong>&lt;/li&gt;</strong>
-                  dd
-                    | e.g. 
-                    em Basic science exists as a language and a culture&hellip;
-              
-                  dd
-                    pre
-                      code
-                        | &lt;h2&gt;Overview of Qualifications&lt;/h2&gt;
-                        |   &lt;ul&gt;
-                        |     <strong>&lt;li&gt;&lt;strong&gt;</strong>Concept driven<strong>&lt;/strong&gt;</strong> trained empiricist proficient at evaluating, understanding and communicating basic science<strong>&lt;/li&gt;</strong>
-                        |     &lt;li&gt;Experienced in developing &lt;strong&gt; fun and accessible science curriculum &lt;/strong&gt;for under-resourced middle- and high school students&lt;/li&gt;
-                        |     &lt;li&gt;10+ years of experience with a wide range of techniques in basic &lt;strong&gt; laboratory research and data analysis&lt;/strong&gt;&lt;/li&gt;
-                        |     &lt;li&gt; &lt;/li&gt;&lt;strong&gt;Accomplished teacher to diverse audiences&lt;/strong&gt;, grade 6 through university level
-                        |     &lt;li&gt;&lt;strong&gt;Capable communicator &lt;/strong&gt; with a demonstrated ability to work in diverse, collaborative and dynamic environments&lt;/li&gt;
-                        |     &lt;li&gt;Effective &lt;strong&gt;grant and fellowship writer&lt;/strong&gt;&lt;/li&gt;
-                        |     &lt;li&gt;&lt;strong&gt;Creative and innovative thinker &lt;/strong&gt;and advocate for interdisciplinary, innovative STEM Education.&lt;/li&gt;
-                        |   &lt;/ul&gt;
-            h3
-              strong /awards-honors-press/index.html
-          dd
-            | This is the file for 
-            strong MareshiaDonald.com/awards-honors-press/
-          dd
-            img(src="/public/images/how-to/6awards.png")
-          dd 
-            p To find the areas that you'll want to edit, look for the section title
-            ol
-              li
-                dl
-                  dt
-                    | Awards & Honors : <br>
-                    code <strong>&lt;dt&gt;&lt;strong&gt;</strong> [insert award/honor title] <strong>&lt;/strong&gt;&lt;/dt&gt;</strong><br>
-                    code <strong>&lt;dd class=&quot;date&quot;&gt;&lt;em&gt;</strong> [insert date ]<strong>&lt;/em&gt;&lt;/dd&gt;</strong>
-                    
-                  dd
-                    | e.g. 
-                    em 
-                      | American Physiological Society William Townsend Porter Physiology Fellowship<br>September 2010 - September 2012
-                  dd
-                    pre
-                      code
-                        | &lt;h2&gt;Awards &amp; Honors&lt;/h2&gt;
-                        | &lt;dl class=&quot;<strong>awards</strong>&quot;&gt;
-                        |   <strong>&lt;dt&gt;&lt;strong&gt;</strong>American Physiological Society William Townsend Porter Physiology Fellowship <strong>&lt;/strong&gt;&lt;/dt&gt;</strong>
-                        |   <strong>&lt;dd class=&quot;date&quot;&gt;&lt;em&gt;</strong>September 2010 - September 2012<strong>&lt;/em&gt;&lt;/dd&gt;</strong>
-                        |   &lt;dt&gt;&lt;strong&gt;American Psychological Association Diversity Program in Neuroscience Pre-Doctoral Fellowship&lt;/strong&gt;&lt;/dt&gt;
-                        |   &lt;dd class=&quot;date&quot;&gt;&lt;em&gt;July 2009 - July 2010&lt;/em&gt;&lt;/dd&gt;
-                        |   &lt;dt&gt;&lt;strong&gt;Marine Biological Laboratory Summer Program in Neuroscience Ethics and Survival Fellowship&lt;/strong&gt;&lt;/dt&gt;
-                        |   &lt;dd class=&quot;date&quot;&gt;&lt;em&gt;June 2008 - July 2008 &lt;/em&gt;&lt;/dd&gt;
-                        | &lt;/dl&gt;
-              li
-                dl
-                  dt
-                    | Press: <br>
-                    code 
-                      | <strong>&lt;dt&gt;&lt;strong&gt;&lt;a href=&quot;</strong> [ insert url ] <strong>&quot;&gt;</strong> [ insert text ] <strong>&lt;/a&gt;&lt;/strong&gt;&lt;/dt&gt;</strong>
-                    br
-                    code
-                      | <strong>&lt;dd class=&quot;link&quot;&gt;&lt;a href=&quot;</strong> [ insert url ] <strong>&quot;&gt;&lt;em&gt;</strong> [ insert text ] <strong>&lt;/em&gt;&lt;/a&gt;&lt;/dd&gt;</strong>
-                  
-                  dd
-                    | e.g. 
-                    em Scientist, STEM Educator and Outreach Professional with a commitment to social justice and diversifying the STEM pipeline.
-                  dd
-                    pre
-                      code
-                        | &lt;h2&gt;Press&lt;/h2&gt;
-                        |   &lt;dl class=&quot;<strong>press</strong>&quot;&gt;
-                        |     <strong>&lt;dt&gt;&lt;strong&gt;&lt;a href=&quot;</strong>http://scienceclubforgirls.org/news-events-2/blog/mareshia-donalds-letter-to-her-young-self<strong>&quot;&gt;</strong>Mareshia Donald&rsquo;s letter to her young self<strong>&lt;/a&gt;&lt;/strong&gt;&lt;/dt&gt;</strong>
-                        |     <strong>&lt;dd class=&quot;link&quot;&gt;&lt;a href=&quot;</strong>http://scienceclubforgirls.org<strong>&quot;&gt;&lt;em&gt;</strong>scienceclubforgirls.org<strong>&lt;/em&gt;&lt;/a&gt;&lt;/dd&gt;</strong>
-                        |     &lt;dt&gt;&lt;strong&gt;&lt; href=&quot;http://www.brandeis.edu/now/2011/october/womeninscience.html&quot;&gt;Growing cohort of women in science calling Brandeis home&lt;/a&gt;&lt;/strong&gt;&lt;/dt&gt;
-                        |     &lt;dd class=&quot;link&quot;&gt;&lt;a href=&quot;http://www.brandeis.edu&quot;&gt;&lt;em&gt;brandeis.edu&lt;/em&gt;&lt;/a&gt;&lt;/dd&gt;
-                        | &lt;/dl&gt;
+        ul
+          include partials/_images.jade
+          include partials/_index.jade
+          include partials/_about.jade
+          include partials/_awards.jade
+          include partials/_edu.jade
+          include partials/_service.jade
+    .row.content
+      section#code-reference.twelve.columns.content
+        include partials/_code-ref.jade

@@ -1,0 +1,51 @@
+li#service
+  h3
+    strong /service/index.html
+  p
+    | This is the file for 
+    strong MareshiaDonald.com/service/
+  img(src="/public/images/how-to/service.png")
+  p Find the block of code directly underneath the correct heading.
+  pre
+    code
+      | &lt;h2&gt;Service&lt;/h2&gt;
+      |  &lt;dl class=&quot;<strong>service</strong>&quot;&gt;
+      |    <strong>&lt;dt class=&quot;service-item&quot;&gt;&lt;strong&gt;</strong>Board Member<strong>&lt;/strong&gt;&lt;em&gt;</strong> November 2014<strong>&lt;/em&gt;&lt;/dt&gt;</strong>
+      |    <strong>&lt;dd class=&quot;address&quot;&gt;</strong>Fisher College Health Science &amp; Biology Board<strong>&lt;/dd&gt;</strong>
+      |    <strong>&lt;dd class=&quot;address&quot;&gt;</strong>Fisher College, Boston, Massachusetts<strong>&lt;/dd&gt;</strong>
+      |    &lt;dt class=&quot;service-item&quot;&gt;&lt;strong&gt;Keynote Speaker&lt;/strong&gt;&lt;em&gt; May 2014&lt;/em&gt;&lt;/dt&gt;
+      |    &lt;dd class=&quot;address&quot;&gt;Fenway High School, Girls Gender Retreat&lt;/dd&gt;
+      |    &lt;dd class=&quot;address&quot;&gt;Auburndale MA&lt;/dd&gt;
+      |    <strong>&lt;dd class=&quot;description&quot;&gt;&lt;p&gt;</strong>The Unlikely Trajectory of a "Statistic"<strong>&lt;/p&gt;&lt;/dd&gt;</strong>
+      |    &hellip;
+      |  &lt;/dl&gt;
+  dl
+    dt
+      p To add (or edit) a service item, you'll have to touch three of four chunks of code. The first is the service item's role and date
+    dd
+      pre
+        code <strong>&lt;dt class=&quot;service-item&quot;&gt;&lt;strong&gt;</strong> [ insert role title ] <strong>&lt;/strong&gt;&lt;em&gt;</strong> [ insert service date ] <strong>&lt;/em&gt;&lt;/dt&gt;</strong>
+    dt
+      p To add (or edit) the service institution use
+    dd
+      pre
+        code <strong>&lt;dd class=&quot;address&quot;&gt;</strong> [ insert institution name ] <strong>&lt;/dd&gt;</strong>
+    dt
+      p To add (or edit) the service institution's location use
+    dd
+      pre
+        code <strong>&lt;dd class=&quot;address&quot;&gt;</strong> [ insert institution location ]<strong>&lt;/dd&gt;</strong>
+    dt
+      p A description is optional. To add or edit a description use (note: wrap paragraphs in a p tag)
+    dd
+      pre
+        code <strong>&lt;dd class=&quot;description&quot;&gt;&lt;p&gt;</strong> [ insert description ] <strong>&lt;/p&gt;&lt;/dd&gt;</strong>
+    dd
+      | e.g.
+      blockquote
+        strong Panelist
+        em  March 2014<br>
+        span Science Club for Girls<br>Simmons College, Boston, Massachusetts
+        p
+          em Women of Color in STEM: Finding Mentorship and Balance
+        p Participated on a panel on which I discussed confronting and managing challenges women of color in the science, technology, engineering, and math fields, as well as practices for successful work/life balance.

@@ -100,6 +100,116 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/jade\/how-to\/partials\/_about.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jade\/how-to\/partials\/_about.jade",
+		"outputAbbreviatedPath": "\/how-to\/partials\/_about.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/jade\/how-to\/partials\/_awards.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jade\/how-to\/partials\/_awards.jade",
+		"outputAbbreviatedPath": "\/how-to\/partials\/_awards.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/jade\/how-to\/partials\/_code-ref.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jade\/how-to\/partials\/_code-ref.jade",
+		"outputAbbreviatedPath": "\/how-to\/partials\/_code-ref.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/jade\/how-to\/partials\/_edu.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jade\/how-to\/partials\/_edu.jade",
+		"outputAbbreviatedPath": "\/how-to\/partials\/_edu.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/jade\/how-to\/partials\/_filezilla-setup.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jade\/how-to\/partials\/_filezilla-setup.jade",
+		"outputAbbreviatedPath": "\/how-to\/partials\/_filezilla-setup.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/jade\/how-to\/partials\/_images.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jade\/how-to\/partials\/_images.jade",
+		"outputAbbreviatedPath": "\/how-to\/partials\/_images.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/jade\/how-to\/partials\/_index.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jade\/how-to\/partials\/_index.jade",
+		"outputAbbreviatedPath": "\/how-to\/partials\/_index.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/jade\/how-to\/partials\/_main-nav.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jade\/how-to\/partials\/_main-nav.jade",
+		"outputAbbreviatedPath": "\/how-to\/partials\/_main-nav.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/jade\/how-to\/partials\/_service.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jade\/how-to\/partials\/_service.jade",
+		"outputAbbreviatedPath": "\/how-to\/partials\/_service.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/jade\/how-to\/partials\/_software.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jade\/how-to\/partials\/_software.jade",
+		"outputAbbreviatedPath": "\/how-to\/partials\/_software.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
 	"\/jade\/index.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -340,6 +450,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/images\/how-to\/4filezilla.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 350108,
+		"inputAbbreviatedPath": "\/public\/images\/how-to\/4filezilla.png",
+		"outputAbbreviatedPath": "\/public\/images\/how-to\/4filezilla.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/images\/how-to\/4index.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -369,6 +490,28 @@
 		"initialSize": 361301,
 		"inputAbbreviatedPath": "\/public\/images\/how-to\/6awards.png",
 		"outputAbbreviatedPath": "\/public\/images\/how-to\/6awards.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/how-to\/edu.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 519601,
+		"inputAbbreviatedPath": "\/public\/images\/how-to\/edu.png",
+		"outputAbbreviatedPath": "\/public\/images\/how-to\/edu.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/how-to\/service.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 345475,
+		"inputAbbreviatedPath": "\/public\/images\/how-to\/service.png",
+		"outputAbbreviatedPath": "\/public\/images\/how-to\/service.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

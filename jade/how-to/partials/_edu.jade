@@ -1,0 +1,90 @@
+li#education
+  h3
+    strong /education-and-experience/index.html
+  | This is the file for 
+  strong MareshiaDonald.com/education-and-experience/
+  img(src="/public/images/how-to/edu.png")
+  p To find the areas that you'll want to edit, look for the section title
+  ol
+    li
+      | Education
+      dl
+        dt
+          p Find the block of code directly underneath the correct heading.
+        dd
+          pre
+            code
+              | &lt;h2&gt;Education&lt;/h2&gt;
+              | &lt;dl class=&quot;<strong>degrees</strong>&quot;&gt;
+              |   <strong>&lt;dt&gt;&lt;strong&gt;</strong>Ph.D Neuroscience<strong>&lt;/strong&gt;&lt;/dt&gt;</strong>
+              |   <strong>&lt;dd class=&quot;address&quot;&gt;&lt;em&gt;</strong>Brandeis University, Waltham MA 2014<strong>&lt;/em&gt;&lt;/dd&gt;</strong>
+              |   &lt;dt&gt;&lt;strong&gt;B.A. Neuroscience and Behavior&lt;/strong&gt;&lt;/dt&gt;
+              |   &lt;dd class=&quot;address&quot;&gt;&lt;em&gt;University of California at Santa Cruz, Santa Cruz CA 2004&lt;/em&gt;&lt;/dd&gt;
+              |   &lt;dt&gt;&lt;strong&gt;B.A. Language Studies&lt;/strong&gt;&lt;/dt&gt;
+              |   &lt;dd class=&quot;address&quot;&gt;&lt;em&gt;University of California at Santa Cruz, Santa Cruz CA 2004&lt;/em&gt;&lt;/dd&gt;
+              | &lt;/dl&gt;
+        dt
+          p To add (or edit) a degree, you'll have to touch two lines. The first is for the degree's title
+        dd
+          pre
+            code <strong>&lt;dt&gt;&lt;strong&gt;</strong> [ insert degree title ] <strong>&lt;/strong&gt;&lt;/dt&gt;</strong>
+        dt
+          p The second for the institution, its location and the date received
+        dd  
+          pre
+            code <strong>&lt;dd class=&quot;address&quot;&gt;&lt;em&gt;</strong> [ insert institution name, location, date  ]<strong>&lt;/em&gt;&lt;/dd&gt;</strong>;</strong>
+
+        dd
+          | e.g
+          blockquote
+            strong Ph.D Neuroscience<br>
+            em Brandeis University, Waltham MA 2014
+    li
+      | Experience:
+      dl
+        dt
+          p Find the block of code directly underneath the correct heading.
+        dd
+          pre
+            code
+              | &lt;h2&gt;Experience&lt;/h2&gt;
+              | &lt;dl class=&quot;<strong>experience</strong>&quot;&gt;
+              |   <strong>&lt;dt class=&quot;pdTitle&quot;&gt;&lt;strong&gt;</strong>Education and Diversity Program Manager<strong>&lt;/strong&gt;&lt;/dt&gt;</strong>
+              |   <strong>&lt;dd class=&quot;address&quot;&gt;&lt;em&gt;</strong>MIT -- National Science Foundation Center for Emergent Behaviors of Integrated Cellular Systems <strong>&lt;/em&gt;&lt;/dd&gt;</strong>
+              |   &lt;dt class=&quot;pdTitle&quot;&gt;&lt;strong&gt;Program Coordinator&lt;/strong&gt;&lt;/dt&gt;
+              |   &lt;dd class=&quot;address&quot;&gt;&lt;em&gt;SEED Academy @ MIT&lt;/em&gt;&lt;/dd&gt;
+              |   <strong>&lt;dd class=&quot;description&quot;&gt;</strong>
+              |     <strong>&lt;p&gt;</strong>As Program Coordinator for SEED Academy, I supported and fostered the learning of 90 secondary students grades 9-12. To this end, to ensure that best practices in teaching and student engagement are being exercised, I created and facilitated a professional development program for a teaching staff of 20. Additionally, I steered the development of pedagogy and curriculum toward an integrated, experiential and project based program model and foster relationships with educators, CBOs and community stakeholders in Cambridge, Lawrence and Boston.<strong>&lt;/p&gt;</strong>
+              |     <strong>&lt;p&gt;</strong>Moreover, I developed successful data driven strategies for recruiting talented students from under-resourced and under-represented populations, supported both staff and student evaluations and fostered working relationships with staff, faculty, students and the greater MIT community.<strong>&lt;/p&gt;</strong>
+              |   <strong>&lt;/dd&gt;</strong>
+              |   &lt;dt class=&quot;pdTitle&quot;&gt;&lt;strong&gt;Programming Director&lt;/strong&gt;&lt;/dt&gt;
+              |   &lt;dd class=&quot;address&quot;&gt;&lt;em&gt;Brandeis Women in Science Initiative&lt;/em&gt;&lt;/dd&gt;
+              |   &lt;dd class=&quot;description&quot;&gt;
+              |     &lt;p&gt;As Programming Director, I created a community of graduate students, post-doctoral fellows and faculty to foster the development of women in the sciences, and organized panels and forums to raise awareness about and address the issues women in science face. I forged a partnership with Brandeis&rsquo; Graduate Career Services Office to extend the reach of Professional Development Programming to the Sciences. I conceived of the Art of Science Series to broaden the interdisciplinary scope of the Initiative and to make Science more broadly accessible to people from diverse disciplines. I also assisted in securing two dedicated lactation rooms and hospital-grade lactation pump for community members not covered by the Affordable Care Act.&lt;/p&gt;
+              |   &lt;/dd&gt;
+              | &lt;/dl&gt;
+        dt
+          p To add (or edit) an experience, you'll have to touch two or three chunks of code. The first is the position title
+        dd
+          pre
+            code <strong>&lt;dt class=&quot;pdTitle&quot;&gt;&lt;strong&gt;</strong> [ insert position title ] <strong>&lt;/strong&gt;&lt;/dt&gt;</strong>g>
+        dt
+          p To edit the position's location use
+        dd
+          pre
+            code <strong>&lt;dd class=&quot;address&quot;&gt;&lt;em&gt;</strong> [ insert position location ]  <strong>&lt;/em&gt;&lt;/dd&gt;</strong>
+         dt
+          p The third block is completely optional. If you'll notice in the example above, the first experience does not have a description (note: only the first paragraph is required for a description but you can add as many as you would like)
+        dd
+          pre
+            code
+              | <strong>&lt;dd class=&quot;description&quot;&gt;</strong>
+              |   <strong>&lt;p&gt;</strong> [ insert description paragraph 1 ] <strong>&lt;/p&gt;</strong>
+              |   <strong>&lt;p&gt;</strong> [ insert description paragraph 2 ] <strong>&lt;/p&gt;</strong>
+              | <strong>&lt;/dd&gt;</strong>
+        dd
+          | e.g.
+          blockquote
+             strong Program Coordinator<br>
+             em SEED Academy @ MIT<br>
+             p As Program Coordinator for SEED Academy, &hellip;

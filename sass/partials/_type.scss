@@ -93,6 +93,18 @@ dl {
       }
     }
   }
+  dd {
+    font-weight: $font-light;
+  } 
+}
+
+.centered {
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+
+table.middle {
+  vertical-align: middle;
 }
 
 /* nav bar */
@@ -134,4 +146,8 @@ ul.navbar-list a li.active  {
 ul, ol {
   list-style-position: outside;
   -webkit-column-width: 100%;
+}
+
+ul {
+  list-style: none;
 }

@@ -23,12 +23,12 @@
       </ul>
     </nav>
     <div class="container">
-      <div id="grid" class="main-content">
-        <div class="row content">
+      <article id="grid" class="main-content">
+        <section id="header" class="row content">
           <div class="twelve columns content">
             <h1>How to Update MareshiaDonald.com</h1>
           </div>
-        </div>
+        </section>
         <div class="row content">
           <div class="twelve columns content">
             <p class="no-top-margin">On this page, I'll describe the the workflow of updating the website mareshiadonald.com. I will attempt to be as detailed as possible by listing the software that you'll need; how to download the current site's content; the files that you may want to edit; templates for editing particular sections; and how to upload to the site.</p>
@@ -36,96 +36,169 @@
         </div>
         <div class="row content">
           <div class="twelve columns content">
+            <div id="table-of-contents">
+              <h2>Table of Contents</h2>
+              <hr>
+              <ul>
+                <li><strong><a href="#software">Software</a></strong>
+                  <ul>
+                    <li><a href="#setup-filezilla">Setting up Filezilla</a></li>
+                  </ul>
+                </li>
+                <li><strong><a href="#files">Files</a></strong>
+                  <ul>
+                    <li><a href="#images">/public/images</a></li>
+                    <li><a href="#index">index.html</a></li>
+                    <li><a href="#about">/about/index.html</a></li>
+                    <li><a href="#awards">/awards-honors-press/index.html</a></li>
+                    <li><a href="#education">/education-and-experience/index.html</a></li>
+                    <li><a href="#service">/service/index.html</a></li>
+                  </ul>
+                </li>
+                <li><strong><a href="#code-reference">Code Reference</a></strong>
+                  <ul>
+                    <li><a href="#structure">HTML Element Structure</a></li>
+                    <li><a href="#custom-classes">Classes</a></li>
+                    <li><a href="#custom-elements">HTML Elements</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row content">
+          <section id="software" class="twelve columns content">
             <h2>Software</h2>
             <hr>
             <dl>
               <dt><strong> <a href="https://filezilla-project.org/download.php?type=client">FileZilla</a></strong></dt>
-              <dd><em>This is the software that you will be using to connect to the server located at mareshiadonald.com. Filezilla is an FTP (File Transfer Protocol) application. It allows you to view and update files on an FTP server in the same way you would view and update files on your own computer.</em></dd>
+              <dd>This is the software that you will be using to connect to the server located at mareshiadonald.com. Filezilla is an FTP (File Transfer Protocol) application. It allows you to view and update files on an FTP server in the same way you would view and update files on your own computer.</dd>
               <dt><strong> <a href="http://brackets.io/">Brackets</a></strong></dt>
               <dd>This is my personal favorite text editor for coding. This application will let you open up any of your website files and edit them. It works just like a regular text editor but does some smart color coding for editing code. If you don't like brackets, you may want to try <strong><a href="http://www.sublimetext.com/">Sublime Text</a></strong>.</dd>
             </dl>
-            <h3> <strong>Setting up Filezilla </strong></h3>
+          </section>
+        </div>
+        <div class="row content">
+          <section id="setup-filezilla" class="twelve columns content">
+            <h3><strong>Setting up Filezilla </strong></h3>
+            <p>
+               
+              Filezilla is very easy to get up and running. Start by <strong><a href="https://filezilla-project.org/download.php?type=client">downloading</a></strong> and then installing the application. 
+            </p>
             <ol>
               <li>
                  
-                After you've downloaded filezilla for the first time, open the application and you should see this screen<img src="/public/images/how-to/1filezilla.png" class="center">
+                After you've installed filezilla, open it for the first time and you should see this screen<img src="/public/images/how-to/1filezilla.png" class="center">
               </li>
               <li>Click the Site Maganger link<img src="/public/images/how-to/2filezilla.png"></li>
               <li>
                  
                 Click <strong>New Site</strong> and enter your information like below. You should already know your password and username. Click <strong>Connect </strong>and that will save your settings and connect to the server.
-                <dl>
-                  <dt> <strong>Host</strong></dt>
-                  <dd>ftp.mareshiadonald.com</dd>
-                </dl><img src="/public/images/how-to/3filezilla.png">
+                <table class="middle">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <dl class="centered">
+                          <dt> <strong>Host</strong></dt>
+                          <dd>ftp.mareshiadonald.com</dd>
+                          <dt> <strong>Protocol</strong></dt>
+                          <dd>FTP - File Transfer Protocol</dd>
+                          <dt> <strong>Encryption</strong></dt>
+                          <dd>Use plain FTP (insecure)</dd>
+                          <dt> <strong>Logon Type</strong></dt>
+                          <dd>Normal</dd>
+                          <dt> <strong>User</strong></dt>
+                          <dd>Your username (most likely the one in the image)</dd>
+                          <dt> <strong>Password</strong></dt>
+                          <dd>Your pasword</dd>
+                        </dl>
+                      </td>
+                      <td class="desktop"><img src="/public/images/how-to/3filezilla.png"></td><img src="/public/images/how-to/3filezilla.png" class="mobile">
+                    </tr>
+                  </tbody>
+                </table>
               </li>
               <li>If you get a message prompting you to trust the servers certificate, click <strong>ok</strong> .</li>
               <li>
                  
-                Select every file and save it in a folder on your computer (if you want, you can download a copy of the website from the last time adam edited <strong><a href="https://github.com/apere/mar/archive/master.zip">here</a></strong>. This folder is the entire contents of your website. This is where you'll be working from.
+                Select every file and save everything in it by dragging it into a folder on your computer (if you want, you can download a copy of the website from the last time adam edited <strong><a href="https://github.com/apere/mar/archive/master.zip">here</a></strong>). This folder contains entire contents of your website. This is where you'll be working from.<img src="/public/images/how-to/4filezilla.png">
               </li>
             </ol>
-          </div>
+          </section>
         </div>
         <div class="row content">
-          <div class="twelve columns content">
+          <section id="files" class="twelve columns content">
             <h2>Files</h2>
             <hr>
-            <dl>
-              <dt>
+            <ul>
+              <li id="images">
                 <h3><strong>/public/images/</strong></h3>
-              </dt>
-              <dd>All images belong in this folder. If you want to swap out an image, I suggest naming it the same as the image you're replacing and swap the files.</dd>
-              <dt>
+                <p>All images belong in this folder. If you want to swap out an image, I suggest naming it the same as the image you're replacing and swap the files.</p>
+              </li>
+              <li id="index">
                 <h3><strong>index.html</strong></h3>
-              </dt>
-              <dd>Every webpage will have a filename of "index.html". This one, the one in the main folder, is the file for <strong>MareshiaDonald.com/</strong></dd>
-              <dd><img src="/public/images/how-to/4index.png"></dd>
-              <dd> 
-                <p>To find the areas that you'll want to edit, look for <strong>inner-wrapper</strong>. Inside of <strong>inner-wrapper</strong>, the two places that you'll want to edit are: </p>
-                <ol>
-                  <li>
-                    <dl>
-                      <dt>title : <code><strong>&lt;h1&gt;</strong> [ insert title ] <strong>&lt;/h1&gt;</strong></code></dt>
-                      <dd>e.g. <em>Mareshia Donald, PhD</em></dd>
-                    </dl>
-                  </li>
-                  <li>
-                    <dt>phrase : <code><strong>&lt;h2&gt;</strong> [ insert phrase ] <strong>&lt;/h2&gt;</strong></code></dt>
-                    <dd>e.g. <em>Scientist, STEM Educator and Outreach Professional with a commitment to social justice and diversifying the STEM pipeline.</em></dd>
-                  </li>
-                </ol>
-              </dd>
-              <dd>
+                <p>Every webpage will have a filename of "index.html". This one, the one in the main folder, is the file for <strong>MareshiaDonald.com/</strong></p><img src="/public/images/how-to/4index.png">
+                <p>To get started, find the block of code with the class <strong>inner-wrapper</strong>.</p>
                 <pre><code>&lt;div class=&quot;<strong>inner-wrapper</strong>&quot;&gt;
   <strong>&lt;h1&gt;</strong>Mareshia Donald, PhD<strong>&lt;/h1&gt;</strong>
   <strong>&lt;h5&gt;</strong>Scientist, STEM Educator and Outreach Professional with a commitment to social justice and diversifying the STEM pipeline.<strong>&lt;/h5&gt;</strong>
 &lt;/div&gt;</code></pre>
-              </dd>
-              <dt> 
-                <h3><strong>/about/index.html</strong></h3>
-              </dt>
-              <dd>
-                <p>This is the file for <strong>MareshiaDonald.com/about/</strong></p>
-              </dd>
-              <dd><img src="/public/images/how-to/5about.png"></dd>
-              <dd> 
-                <p>To find the areas that you'll want to edit, look for the title of the section you want to edit</p>
+                <p>Inside of <strong>inner-wrapper</strong>, the two places that you'll want to edit are: </p>
                 <ol>
-                  <li>
+                  <li>To edit the title use
                     <dl>
-                      <dt>Personal Statement : <code><strong>&lt;p&gt;</strong> [ insert personal statement ] <strong>&lt;/p&gt;</strong></code></dt>
-                      <dd>e.g. <em>Basic science exists as a language and a culture&hellip;</em></dd>
-                      <dd>
-                        <pre><code>&lt;h2&gt;Personal Statement&lt;/h2&gt;
-  <strong>&lt;p&gt;</strong>Basic science exists as a language and a culture all its own. I am a translator and a cultural ambassador. I am a quick learner who possesses strong analytic skills, a collaborative spirit, and a passion for developing new skills and meeting new people. I am fortunate to work in an environment in which I'm exposed to the broad applications of STEM. I am familiar with research and literature in an array of disciplines within the life sciences. I am passionate about communicating science and increasing entry points to educational access especially to under-resourced populations. I look forward to leveraging my scientific training to promote scientific literacy and shape the future of scientific innovation.</strong>&lt;/p&gt;</strong></code></pre>
+                      <dt>
+                        <pre><code><strong>&lt;h1&gt;</strong> [ insert title ] <strong>&lt;/h1&gt;</strong></code></pre>
+                      </dt>
+                      <dd>e.g.
+                        <blockquote>
+                          <h1>Mareshia Donald, PhD</h1>
+                        </blockquote>
                       </dd>
                     </dl>
                   </li>
-                  <li>
+                  <li>To edit the phrase use
+                    <dt>
+                      <pre><code><strong>&lt;h5&gt;</strong> [ insert phrase ] <strong>&lt;/h5&gt;</strong></code></pre>
+                    </dt>
+                    <dd>e.g.
+                      <blockquote>
+                        <h5>Scientist, STEM Educator and Outreach Professional with a commitment to social justice and diversifying the STEM pipeline.</h5>
+                      </blockquote>
+                    </dd>
+                  </li>
+                </ol>
+              </li>
+              <li id="about">
+                <h3><strong>/about/index.html</strong></h3>
+                <p>This is the file for <strong>MareshiaDonald.com/about/</strong></p><img src="/public/images/how-to/5about.png">
+                <p>To find the areas that you'll want to edit, look for the title of the section you want to edit</p>
+                <ol>
+                  <li>Personal Statement : 
                     <dl>
-                      <dt>Overview of Qualifications: <code><strong>&lt;li&gt; &lt;strong&gt;</strong> [ insert bold word ] <strong>&lt;/strong&gt;</strong> [ insert rest of statement ] <strong>&lt;/li&gt;</strong></code></dt>
-                      <dd>e.g. <em>Basic science exists as a language and a culture&hellip;</em></dd>
+                      <dt>
+                        <p>Find the block of code directly underneath the correct heading</p>
+                      </dt>
+                      <dd>
+                        <pre><code>&lt;h2&gt;Personal Statement&lt;/h2&gt;
+<strong>&lt;p&gt;</strong>Basic science exists as a language and a culture all its own. I am a translator and a cultural ambassador. I am a quick learner who possesses strong analytic skills, a collaborative spirit, and a passion for developing new skills and meeting new people. I am fortunate to work in an environment in which I'm exposed to the broad applications of STEM. I am familiar with research and literature in an array of disciplines within the life sciences. I am passionate about communicating science and increasing entry points to educational access especially to under-resourced populations. I look forward to leveraging my scientific training to promote scientific literacy and shape the future of scientific innovation.</strong>&lt;/p&gt;</strong></code></pre>
+                      </dd>
+                      <dt>
+                        <p>Replace the text inside of</p>
+                      </dt>
+                      <dd>
+                        <pre><code><strong>&lt;p&gt;</strong> [ insert personal statement ] <strong>&lt;/p&gt;</strong></code></pre>
+                      </dd>
+                      <dd>
+                        <blockquote>Basic science exists as a language and a culture&hellip;</blockquote>
+                      </dd>
+                    </dl>
+                  </li>
+                  <li>Overview of Qualifications
+                    <dl>
+                      <dr>
+                        <p>Find the block of code directly underneath the correct heading.</p>
+                      </dr>
                       <dd>
                         <pre><code>&lt;h2&gt;Overview of Qualifications&lt;/h2&gt;
   &lt;ul&gt;
@@ -138,22 +211,29 @@
     &lt;li&gt;&lt;strong&gt;Creative and innovative thinker &lt;/strong&gt;and advocate for interdisciplinary, innovative STEM Education.&lt;/li&gt;
   &lt;/ul&gt;</code></pre>
                       </dd>
+                      <dt>
+                        <p>To add (or edit) a qualification use</p>
+                      </dt>
+                      <dd>
+                        <pre><code><strong>&lt;li&gt; &lt;strong&gt;</strong> [ insert bold word ] <strong>&lt;/strong&gt;</strong> [ insert rest of statement ] <strong>&lt;/li&gt;</strong></code></pre>
+                      </dd>
+                      <dd>e.g.
+                        <blockquote><strong>Concept driven </strong> trained empiricist proficient at evaluating, understanding and communicating basic science</blockquote>
+                      </dd>
                     </dl>
                   </li>
                 </ol>
+              </li>
+              <li id="awards">
                 <h3><strong>/awards-honors-press/index.html</strong></h3>
-              </dd>
-              <dd>This is the file for <strong>MareshiaDonald.com/awards-honors-press/</strong></dd>
-              <dd><img src="/public/images/how-to/6awards.png"></dd>
-              <dd> 
+                <p>This is the file for <strong>MareshiaDonald.com/awards-honors-press/</strong></p><img src="/public/images/how-to/6awards.png">
                 <p>To find the areas that you'll want to edit, look for the section title</p>
                 <ol>
-                  <li>
+                  <li>Awards & Honors
                     <dl>
-                      <dt>Awards & Honors : <br><code><strong>&lt;dt&gt;&lt;strong&gt;</strong> [insert award/honor title] <strong>&lt;/strong&gt;&lt;/dt&gt;</strong><br></code><code><strong>&lt;dd class=&quot;date&quot;&gt;&lt;em&gt;</strong> [insert date ]<strong>&lt;/em&gt;&lt;/dd&gt;</strong></code></dt>
-                      <dd>e.g. <em>
-                           
-                          American Physiological Society William Townsend Porter Physiology Fellowship<br>September 2010 - September 2012</em></dd>
+                      <dt>
+                        <p>Find the block of code directly underneath the correct heading.</p>
+                      </dt>
                       <dd>
                         <pre><code>&lt;h2&gt;Awards &amp; Honors&lt;/h2&gt;
 &lt;dl class=&quot;<strong>awards</strong>&quot;&gt;
@@ -165,14 +245,30 @@
   &lt;dd class=&quot;date&quot;&gt;&lt;em&gt;June 2008 - July 2008 &lt;/em&gt;&lt;/dd&gt;
 &lt;/dl&gt;</code></pre>
                       </dd>
+                      <dt>
+                        <p>To add (or edit) an Award/Honor, you'll have to touch two lines. The first for the award/honor title</p>
+                      </dt>
+                      <dd>
+                        <pre><code><strong>&lt;dt&gt;&lt;strong&gt;</strong> [ insert award/honor title ] <strong>&lt;/strong&gt;&lt;/dt&gt;</strong></code></pre>
+                      </dd>
+                      <dt>
+                        <p>The second for the award honor's date</p>
+                      </dt>
+                      <dd> 
+                        <pre><code><strong>&lt;dd class=&quot;date&quot;&gt;&lt;em&gt;</strong> [ insert date ]<strong>&lt;/em&gt;&lt;/dd&gt;</strong></code></pre>
+                      </dd>
+                      <dd>e.g
+                        <blockquote><strong>American Physiological Society William Townsend Porter Physiology Fellowship</strong><em>
+                             
+                            <br>September 2010 - September 2012</em></blockquote>
+                      </dd>
                     </dl>
                   </li>
-                  <li>
+                  <li>Press:
                     <dl>
-                      <dt>Press: <br><code>
-                           
-                          <strong>&lt;dt&gt;&lt;strong&gt;&lt;a href=&quot;</strong> [ insert url ] <strong>&quot;&gt;</strong> [ insert text ] <strong>&lt;/a&gt;&lt;/strong&gt;&lt;/dt&gt;</strong></code><br><code><strong>&lt;dd class=&quot;link&quot;&gt;&lt;a href=&quot;</strong> [ insert url ] <strong>&quot;&gt;&lt;em&gt;</strong> [ insert text ] <strong>&lt;/em&gt;&lt;/a&gt;&lt;/dd&gt;</strong></code></dt>
-                      <dd>e.g. <em>Scientist, STEM Educator and Outreach Professional with a commitment to social justice and diversifying the STEM pipeline.</em></dd>
+                      <dt>
+                        <p>Find the block of code directly underneath the correct heading.</p>
+                      </dt>
                       <dd>
                         <pre><code>&lt;h2&gt;Press&lt;/h2&gt;
   &lt;dl class=&quot;<strong>press</strong>&quot;&gt;
@@ -182,14 +278,261 @@
     &lt;dd class=&quot;link&quot;&gt;&lt;a href=&quot;http://www.brandeis.edu&quot;&gt;&lt;em&gt;brandeis.edu&lt;/em&gt;&lt;/a&gt;&lt;/dd&gt;
 &lt;/dl&gt;</code></pre>
                       </dd>
+                      <dt>
+                        <p>To add (or edit) a press item, you'll have to touch two lines. To edit the article title & url use</p>
+                      </dt>
+                      <dd>
+                        <pre><code><strong>&lt;dt&gt;&lt;strong&gt;&lt;a href=&quot;</strong> [ insert url ] <strong>&quot;&gt;</strong> [ insert text ] <strong>&lt;/a&gt;&lt;/strong&gt;&lt;/dt&gt;</strong></code></pre>
+                      </dd>
+                      <dt>
+                        <p>To edit the source and the source url use</p>
+                      </dt>
+                      <dd>
+                        <pre><code><strong>&lt;dd class=&quot;link&quot;&gt;&lt;a href=&quot;</strong> [ insert url ] <strong>&quot;&gt;&lt;em&gt;</strong> [ insert text ] <strong>&lt;/em&gt;&lt;/a&gt;&lt;/dd&gt;</strong></code></pre>
+                      </dd>
+                      <dd>e.g.
+                        <blockquote><strong><a href="http://scienceclubforgirls.org/news-events-2/blog/mareshia-donalds-letter-to-her-young-self">Mareshia Donald’s letter to her young self</a></strong><br><a href="http://scienceclubforgirls.org"><em>scienceclubforgirls.org</em></a></blockquote>
+                      </dd>
                     </dl>
                   </li>
                 </ol>
-              </dd>
-            </dl>
-          </div>
+              </li>
+              <li id="education">
+                <h3><strong>/education-and-experience/index.html</strong></h3>This is the file for <strong>MareshiaDonald.com/education-and-experience/</strong><img src="/public/images/how-to/edu.png">
+                <p>To find the areas that you'll want to edit, look for the section title</p>
+                <ol>
+                  <li>Education
+                    <dl>
+                      <dt>
+                        <p>Find the block of code directly underneath the correct heading.</p>
+                      </dt>
+                      <dd>
+                        <pre><code>&lt;h2&gt;Education&lt;/h2&gt;
+&lt;dl class=&quot;<strong>degrees</strong>&quot;&gt;
+  <strong>&lt;dt&gt;&lt;strong&gt;</strong>Ph.D Neuroscience<strong>&lt;/strong&gt;&lt;/dt&gt;</strong>
+  <strong>&lt;dd class=&quot;address&quot;&gt;&lt;em&gt;</strong>Brandeis University, Waltham MA 2014<strong>&lt;/em&gt;&lt;/dd&gt;</strong>
+  &lt;dt&gt;&lt;strong&gt;B.A. Neuroscience and Behavior&lt;/strong&gt;&lt;/dt&gt;
+  &lt;dd class=&quot;address&quot;&gt;&lt;em&gt;University of California at Santa Cruz, Santa Cruz CA 2004&lt;/em&gt;&lt;/dd&gt;
+  &lt;dt&gt;&lt;strong&gt;B.A. Language Studies&lt;/strong&gt;&lt;/dt&gt;
+  &lt;dd class=&quot;address&quot;&gt;&lt;em&gt;University of California at Santa Cruz, Santa Cruz CA 2004&lt;/em&gt;&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+                      </dd>
+                      <dt>
+                        <p>To add (or edit) a degree, you'll have to touch two lines. The first is for the degree's title</p>
+                      </dt>
+                      <dd>
+                        <pre><code><strong>&lt;dt&gt;&lt;strong&gt;</strong> [ insert degree title ] <strong>&lt;/strong&gt;&lt;/dt&gt;</strong></code></pre>
+                      </dd>
+                      <dt>
+                        <p>The second for the institution, its location and the date received</p>
+                      </dt>
+                      <dd> 
+                        <pre><code><strong>&lt;dd class=&quot;address&quot;&gt;&lt;em&gt;</strong> [ insert institution name, location, date  ]<strong>&lt;/em&gt;&lt;/dd&gt;</strong>;</strong></code></pre>
+                      </dd>
+                      <dd>e.g
+                        <blockquote><strong>Ph.D Neuroscience<br></strong><em>Brandeis University, Waltham MA 2014</em></blockquote>
+                      </dd>
+                    </dl>
+                  </li>
+                  <li>Experience:
+                    <dl>
+                      <dt>
+                        <p>Find the block of code directly underneath the correct heading.</p>
+                      </dt>
+                      <dd>
+                        <pre><code>&lt;h2&gt;Experience&lt;/h2&gt;
+&lt;dl class=&quot;<strong>experience</strong>&quot;&gt;
+  <strong>&lt;dt class=&quot;pdTitle&quot;&gt;&lt;strong&gt;</strong>Education and Diversity Program Manager<strong>&lt;/strong&gt;&lt;/dt&gt;</strong>
+  <strong>&lt;dd class=&quot;address&quot;&gt;&lt;em&gt;</strong>MIT -- National Science Foundation Center for Emergent Behaviors of Integrated Cellular Systems <strong>&lt;/em&gt;&lt;/dd&gt;</strong>
+  &lt;dt class=&quot;pdTitle&quot;&gt;&lt;strong&gt;Program Coordinator&lt;/strong&gt;&lt;/dt&gt;
+  &lt;dd class=&quot;address&quot;&gt;&lt;em&gt;SEED Academy @ MIT&lt;/em&gt;&lt;/dd&gt;
+  <strong>&lt;dd class=&quot;description&quot;&gt;</strong>
+    <strong>&lt;p&gt;</strong>As Program Coordinator for SEED Academy, I supported and fostered the learning of 90 secondary students grades 9-12. To this end, to ensure that best practices in teaching and student engagement are being exercised, I created and facilitated a professional development program for a teaching staff of 20. Additionally, I steered the development of pedagogy and curriculum toward an integrated, experiential and project based program model and foster relationships with educators, CBOs and community stakeholders in Cambridge, Lawrence and Boston.<strong>&lt;/p&gt;</strong>
+    <strong>&lt;p&gt;</strong>Moreover, I developed successful data driven strategies for recruiting talented students from under-resourced and under-represented populations, supported both staff and student evaluations and fostered working relationships with staff, faculty, students and the greater MIT community.<strong>&lt;/p&gt;</strong>
+  <strong>&lt;/dd&gt;</strong>
+  &lt;dt class=&quot;pdTitle&quot;&gt;&lt;strong&gt;Programming Director&lt;/strong&gt;&lt;/dt&gt;
+  &lt;dd class=&quot;address&quot;&gt;&lt;em&gt;Brandeis Women in Science Initiative&lt;/em&gt;&lt;/dd&gt;
+  &lt;dd class=&quot;description&quot;&gt;
+    &lt;p&gt;As Programming Director, I created a community of graduate students, post-doctoral fellows and faculty to foster the development of women in the sciences, and organized panels and forums to raise awareness about and address the issues women in science face. I forged a partnership with Brandeis&rsquo; Graduate Career Services Office to extend the reach of Professional Development Programming to the Sciences. I conceived of the Art of Science Series to broaden the interdisciplinary scope of the Initiative and to make Science more broadly accessible to people from diverse disciplines. I also assisted in securing two dedicated lactation rooms and hospital-grade lactation pump for community members not covered by the Affordable Care Act.&lt;/p&gt;
+  &lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+                      </dd>
+                      <dt>
+                        <p>To add (or edit) an experience, you'll have to touch two or three chunks of code. The first is the position title</p>
+                      </dt>
+                      <dd>
+                        <pre><code><strong>&lt;dt class=&quot;pdTitle&quot;&gt;&lt;strong&gt;</strong> [ insert position title ] <strong>&lt;/strong&gt;&lt;/dt&gt;</strong>g></code></pre>
+                      </dd>
+                      <dt>
+                        <p>To edit the position's location use</p>
+                      </dt>
+                      <dd>
+                        <pre><code><strong>&lt;dd class=&quot;address&quot;&gt;&lt;em&gt;</strong> [ insert position location ]  <strong>&lt;/em&gt;&lt;/dd&gt;</strong></code></pre>
+                      </dd>
+                      <dt>
+                        <p>The third block is completely optional. If you'll notice in the example above, the first experience does not have a description (note: only the first paragraph is required for a description but you can add as many as you would like)</p>
+                      </dt>
+                      <dd>
+                        <pre><code><strong>&lt;dd class=&quot;description&quot;&gt;</strong>
+  <strong>&lt;p&gt;</strong> [ insert description paragraph 1 ] <strong>&lt;/p&gt;</strong>
+  <strong>&lt;p&gt;</strong> [ insert description paragraph 2 ] <strong>&lt;/p&gt;</strong>
+<strong>&lt;/dd&gt;</strong></code></pre>
+                      </dd>
+                      <dd>e.g.
+                        <blockquote><strong>Program Coordinator<br></strong><em>SEED Academy @ MIT<br></em>
+                          <p>As Program Coordinator for SEED Academy, &hellip;</p>
+                        </blockquote>
+                      </dd>
+                    </dl>
+                  </li>
+                </ol>
+              </li>
+              <li id="service">
+                <h3><strong>/service/index.html</strong></h3>
+                <p>This is the file for <strong>MareshiaDonald.com/service/</strong></p><img src="/public/images/how-to/service.png">
+                <p>Find the block of code directly underneath the correct heading.</p>
+                <pre><code>&lt;h2&gt;Service&lt;/h2&gt;
+ &lt;dl class=&quot;<strong>service</strong>&quot;&gt;
+   <strong>&lt;dt class=&quot;service-item&quot;&gt;&lt;strong&gt;</strong>Board Member<strong>&lt;/strong&gt;&lt;em&gt;</strong> November 2014<strong>&lt;/em&gt;&lt;/dt&gt;</strong>
+   <strong>&lt;dd class=&quot;address&quot;&gt;</strong>Fisher College Health Science &amp; Biology Board<strong>&lt;/dd&gt;</strong>
+   <strong>&lt;dd class=&quot;address&quot;&gt;</strong>Fisher College, Boston, Massachusetts<strong>&lt;/dd&gt;</strong>
+   &lt;dt class=&quot;service-item&quot;&gt;&lt;strong&gt;Keynote Speaker&lt;/strong&gt;&lt;em&gt; May 2014&lt;/em&gt;&lt;/dt&gt;
+   &lt;dd class=&quot;address&quot;&gt;Fenway High School, Girls Gender Retreat&lt;/dd&gt;
+   &lt;dd class=&quot;address&quot;&gt;Auburndale MA&lt;/dd&gt;
+   <strong>&lt;dd class=&quot;description&quot;&gt;&lt;p&gt;</strong>The Unlikely Trajectory of a "Statistic"<strong>&lt;/p&gt;&lt;/dd&gt;</strong>
+   &hellip;
+ &lt;/dl&gt;</code></pre>
+                <dl>
+                  <dt>
+                    <p>To add (or edit) a service item, you'll have to touch three of four chunks of code. The first is the service item's role and date</p>
+                  </dt>
+                  <dd>
+                    <pre><code><strong>&lt;dt class=&quot;service-item&quot;&gt;&lt;strong&gt;</strong> [ insert role title ] <strong>&lt;/strong&gt;&lt;em&gt;</strong> [ insert service date ] <strong>&lt;/em&gt;&lt;/dt&gt;</strong></code></pre>
+                  </dd>
+                  <dt>
+                    <p>To add (or edit) the service institution use</p>
+                  </dt>
+                  <dd>
+                    <pre><code><strong>&lt;dd class=&quot;address&quot;&gt;</strong> [ insert institution name ] <strong>&lt;/dd&gt;</strong></code></pre>
+                  </dd>
+                  <dt>
+                    <p>To add (or edit) the service institution's location use</p>
+                  </dt>
+                  <dd>
+                    <pre><code><strong>&lt;dd class=&quot;address&quot;&gt;</strong> [ insert institution location ]<strong>&lt;/dd&gt;</strong></code></pre>
+                  </dd>
+                  <dt>
+                    <p>A description is optional. To add or edit a description use (note: wrap paragraphs in a p tag)</p>
+                  </dt>
+                  <dd>
+                    <pre><code><strong>&lt;dd class=&quot;description&quot;&gt;&lt;p&gt;</strong> [ insert description ] <strong>&lt;/p&gt;&lt;/dd&gt;</strong></code></pre>
+                  </dd>
+                  <dd>e.g.
+                    <blockquote><strong>Panelist</strong><em> March 2014<br></em><span>Science Club for Girls<br>Simmons College, Boston, Massachusetts</span>
+                      <p><em>Women of Color in STEM: Finding Mentorship and Balance</em></p>
+                      <p>Participated on a panel on which I discussed confronting and managing challenges women of color in the science, technology, engineering, and math fields, as well as practices for successful work/life balance.</p>
+                    </blockquote>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </section>
         </div>
-      </div>
+        <div class="row content">
+          <section id="code-reference" class="twelve columns content">
+            <h2>Code Reference</h2>
+            <hr>
+            <p>This section will briefly describe every HTML element that was highlighted above.</p>
+            <h3 id="structure"> <strong>Structure of an HTML element</strong></h3>
+            <p>An HTML element is a chunk of text that describes how the chunk of text inside of it will be displayed on a webpage. The basic structure of every HTML element is the same:</p>
+            <pre><code>&lt;div class = &quot;description&quot;&gt;   &hellip;    &lt;/div&gt;</code></pre>
+            <ol>
+              <li> <span>The element itself is denoted with greater than and less than symbols</span>
+                <pre><code><strong>&lt;</strong>div class = &quot;description&quot;<strong>&gt;</strong>   &hellip;    <strong>&lt;/</strong>div<strong>&gt;</strong></code></pre>
+                <p>The first pair denotes the opening of element and the second pair (which contains a backslash) denotes the ending of the element. Everything between the two pairs is the actual content that will be displayed on the page.</p>
+              </li>
+              <li><span>The opening and closing of the element always contains the type of element</span>
+                <pre><code>&lt;<strong>div</strong> class = &quot;description&quot;&gt;   &hellip;    &lt;/<strong>div</strong>&gt;</code></pre>
+                <p>
+                   
+                  In this case, the type of element being used is a <code>div</code>
+                </p>
+              </li>
+              <li><span>
+                   
+                  Sometimes, an element will have a class. These classes are used to style elements correctly. The classes is denoted by<code>class = "&hellip;" </code>and is always located in the opening of the element.</span>
+                <pre><code>&lt;div <strong>class = &quot;description&quot</strong>;&gt;   &hellip;    &lt;/div&gt;</code></pre>
+                <p>
+                   
+                  In this case, our <code>div</code> has a class of <code>description</code>
+                </p>
+              </li>
+              <li><span>
+                   
+                  Some elements have special attributes, one of those is a link which contains an <code>href</code>. This is what defines the url for the link.</span>
+                <pre><code>&lt;a <strong>href= &quot; https://www.google.com &quot; </strong>&gt; link to google <strong>&lt;/a&gt;</strong></code></pre>
+                <p>
+                   
+                  In this case, we have a link that points to google.com with the text <a href="http://www.google.com"> <em>link to google</em></a>.
+                </p>
+              </li>
+              <li><span>
+                   
+                  Finally, the actual contents of the element (or the text that will be displayed on your webpage) is always located between the opening and closing of an element.</span>
+                <pre><code>&lt;div class = &quot;description&quot;&gt;   <strong>This is my description text.</strong>   &lt;/div&gt;</code></pre>
+                <p>
+                   
+                  In this case, our <code>div</code> will display the text<em> This is my description text.</em>
+                </p>
+              </li>
+            </ol>
+            <h3 id="custom-classes"> <strong>Classes you may use</strong></h3>
+            <ol>
+              <li><code>inner-wrapper</code><span> &#8212; On the homepage, this class is used to define the area where the main title and subtitle are held.</span></li>
+              <li><code>date</code><span> &#8212; This class is used when the element contains a date (surprise). This is used on the Awards & Honors page.</span></li>
+              <li><code>link</code><span> &#8212; This class is used when a definition description contains a link. This is used on the Awards & Honors page.</span></li>
+              <li><code>address</code><span> &#8212; This class is used when a definition description contains an address or location. this is used on the Education & Experience page and the Service page.</span></li>
+              <li><code>pdTitle</code><span> &#8212; This class is used when a definition term contains a title on the Education & Experience page and the Service page.</span></li>
+              <li><code>description</code><span> &#8212; This class is used when a definition description contains a description paragraph (or more) on the Education & Experience page and the Service page.</span></li>
+              <li><code>service-item</code><span> &#8212; This class is used when a definition term contains the title of a service item on the Service page.</span></li>
+            </ol>
+            <h3 id="custom-elements"> <strong>HTML elements you may use</strong></h3>
+            <ol>
+              <li><code>div</code><span> &#8212; This element simply defines a block of content that should exist on its own row.</span></li>
+              <li><code>a</code><span> &#8212; This is a link element. Place the url for where you want the link to point to in the </span><code>href</code> attribute.</li>
+              <li><code>h1</code><span> &#8212; This is the largest header element. It is only used on the homepage</span></li>
+              <li><code>h2</code><span> &#8212; This is the second largest header element. It is used to denote the beginning of a section.</span></li>
+              <li><code>h5</code><span> &#8212; This is the smallest header element. It is only used on the homepage to denote the subtitle.</span></li>
+              <li><code>p</code><span> &#8212; This is a paragraph element. It is used to define a paragraph of text.</span></li>
+              <li><code>strong</code><span>
+                   
+                  &#8212; This is used to denote text that should be bolded.</span></li>
+              <li><code>em</code><span>
+                   
+                  &#8212; This is an emphasize element. This is used to make any text light gray.</span></li>
+              <li><code>ul</code><span>
+                   
+                  &#8212; This is an unordered list. This list should contain a series of <code>li</code>elements whose order does not matter. (e.g. a bulleted list).</span></li>
+              <li><code>ol</code><span>
+                   
+                  &#8212; This is an ordered list. This list should contain a series of <code>li</code>elements whose order does matter. This adds a number to the left of each element (e.g. this list).</span></li>
+              <li><code>li</code><span>
+                   
+                  &#8212; This is a list item. This should always be inside of an<code>ol</code>or <code>ul</code>.</span></li>
+              <li><code>dl</code><span>
+                   
+                  &#8212; This is a definition list. This is a special kind of list that denotes a series of terms and their corresponding "defenitions". A definition list should contain a series of <code>dt</code> and <code>dd</code>elements.</span></li>
+              <li><code>dt</code><span>
+                   
+                  &#8212; This is a definition term. This is used to denote the 'term' for the next set of <code>dd</code> elements.</span>
+                <li><code>dd</code><span>
+                     
+                    &#8212; This is a definition description. This contains any elements that are used to describe the preceeding <code>dt</code>. You can have as many definition descriptions per term as you would like.</span></li>
+              </li>
+            </ol>
+          </section>
+        </div>
+      </article>
     </div>
     <footer class="container row social-media"><a href="http://www.linkedin.com/pub/mareshia-donald-ph-d/4/327/915" target="_blank"><img src="/public/images/icons/linkedin.png" width="20px" height="auto"></a><a href="https://twitter.com/superscientist" target="_blank"><img src="/public/images/icons/twitter.png" width="20px" height="auto"></a><a href="mailto:mareshia.donald@gmail.com" target="_blank"><img src="/public/images/icons/email.png" width="20px" height="auto"></a></footer>
   </body>

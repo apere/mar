@@ -482,7 +482,7 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #E1E1E1; }
+  border-bottom: 0px solid #E1E1E1; }
 
 th:first-child,
 td:first-child {
@@ -598,15 +598,30 @@ body {
     @media only screen and (max-width: 550px) {
       body#edu, body#service, body#awards, body#about, body#index, body#howto {
         background-image: url('/public/images/bg/microscope_hex-xs.png?1440396280'); } }
-  body#howto h2 {
-    color: #2ccac5; }
-  body#howto img {
-    max-height: calc(90vh - 4em);
-    max-width: 90%;
-    margin: 2em auto !important;
-    display: block; }
-  body#howto dd ol {
-    margin-top: 2em; }
+  body#howto {
+    background-size: contain; }
+    body#howto .row.content {
+      padding-top: 0; }
+    body#howto h1 {
+      margin-top: .75em; }
+    body#howto h2 {
+      color: #2ccac5; }
+    body#howto h3 {
+      margin-top: .5em; }
+    body#howto img {
+      max-height: calc(90vh - 4em);
+      max-width: 90%;
+      margin: 2em auto !important;
+      display: block; }
+    body#howto footer a img {
+      display: inline-block;
+      margin: 0 !important; }
+    body#howto footer a:not(:last-of-type) img {
+      margin-right: .75em !important; }
+    body#howto ol, body#howto ul {
+      margin-top: 2em; }
+      body#howto ol li, body#howto ul li {
+        margin-bottom: 3em; }
 
 code {
   font-family: monospace;
@@ -619,13 +634,25 @@ code {
     font-weight: 800; }
 
 pre {
-  margin: 1em 0 2em 0;
+  margin: 1em 0;
   border: 1px solid rgba(128, 128, 128, 0.2); }
   pre code {
     margin: 0;
     border-radius: 2px;
     overflow-x: auto;
     background-color: rgba(17, 76, 75, 0.05); }
+
+#table-of-contents ul {
+  margin-top: 1em; }
+  #table-of-contents ul li {
+    margin-top: 0;
+    margin-bottom: 1em !important; }
+    #table-of-contents ul li ul {
+      margin-top: .5em;
+      margin-bottom: 0;
+      list-style: disc; }
+      #table-of-contents ul li ul li {
+        margin-bottom: .5em !important; }
 
 .container {
   position: static;
@@ -757,7 +784,7 @@ dl dd.description {
         .navbar.container.row ul.navbar-list li {
           display: inline-block;
           padding: 0 20px;
-          margin: 0; }
+          margin: 0 !important; }
           @media (max-width: 750px) {
             .navbar.container.row ul.navbar-list li {
               display: block;
@@ -854,7 +881,8 @@ footer {
       footer table tr th {
         border: none;
         padding: 0;
-        padding-left: 0; }
+        padding-left: 0;
+        border-bottom: 0; }
 
 .social-media img {
   transition: all 250ms ease-in-out;
@@ -1021,6 +1049,15 @@ dl {
     @media (max-width: 550px) {
       dl dd.description p {
         text-align: left; } }
+  dl dd {
+    font-weight: 300; }
+
+.centered {
+  margin-bottom: 2em;
+  margin-top: 1em; }
+
+table.middle {
+  vertical-align: middle; }
 
 /* nav bar */
 .navbar .container.row {
@@ -1047,3 +1084,6 @@ ul.navbar-list a li.active {
 ul, ol {
   list-style-position: outside;
   -webkit-column-width: 100%; }
+
+ul {
+  list-style: none; }
